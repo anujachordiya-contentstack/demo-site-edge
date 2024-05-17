@@ -16,6 +16,18 @@ export default async function handler(req, context) {
     }
     return new Response(JSON.stringify(response))
   }
+  if (route === '/external') {
+
+    const modifiedRequest = new Request('https://webhook.site/2f864b70-aabe-4d17-9964-29ed6d59c719?id=1', req)
+    const requestWithCF = new Request(modifiedRequest)
+    const res = await fetch(requestWithCF);
+    let response = await res.json();
+    response = {
+      ...response,
+      envVariableValue: envVariable,
+    }
+    return new Response(JSON.stringify(response))
+  }
 
   const modifiedRequest = new Request(req)
   return fetch(modifiedRequest)
