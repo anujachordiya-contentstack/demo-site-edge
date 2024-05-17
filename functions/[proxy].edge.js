@@ -20,13 +20,7 @@ export default async function handler(req, context) {
 
     const modifiedRequest = new Request('https://webhook.site/2f864b70-aabe-4d17-9964-29ed6d59c719?id=1', req)
     const requestWithCF = new Request(modifiedRequest)
-    const res = await fetch(requestWithCF);
-    let response = await res.json();
-    response = {
-      ...response,
-      envVariableValue: envVariable,
-    }
-    return new Response(JSON.stringify(response))
+    return fetch(requestWithCF);
   }
 
   const modifiedRequest = new Request(req)
