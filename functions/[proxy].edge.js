@@ -2,10 +2,8 @@ export default async function handler(req, context) {
   const parsedUrl = new URL(req.url);
   const route = parsedUrl.pathname;
   const envVariable = context.env.TEST_KEY;
-  console.log(req.headers.get('CF-Connecting-IP'))
-  const modifiedReq = new Request(req)
-  modifiedReq.headers.set("x-forwarded-for", modifiedReq.headers.get('CF-Connecting-IP'))
-  console.log(modifiedReq.headers.get('x-forwarded-for'))
+  console.log('CF-Connecting-IP',req.headers.get('CF-Connecting-IP'))
+  console.log('x-forwarded-for',modifiedReq.headers.get('x-forwarded-for'))
   if (route === '/test') {
 
     const modifiedRequest = new Request(new URL('/users', parsedUrl), req)
