@@ -22,9 +22,7 @@ export default async function handler(req, context) {
     const modifiedRequest = new Request('https://4135-103-239-86-172.ngrok-free.app ', req)
     // const modifiedRequest = new Request('https://dummytest.requestcatcher.com/test', req)
     const requestWithCF = new Request(modifiedRequest)
-    return fetch(requestWithCF, {
-      cf: {cacheTtl: -1}
-    });
+    return fetch(requestWithCF);
   }
 
   const modifiedRequest = new Request(req)
