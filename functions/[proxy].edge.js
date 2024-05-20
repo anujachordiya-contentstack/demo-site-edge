@@ -22,7 +22,7 @@ export default async function handler(req, context) {
     // const modifiedRequest = new Request('https://webhook.site/2f864b70-aabe-4d17-9964-29ed6d59c719?id=1', req)
     // const modifiedRequest = new Request('https://dummytest.requestcatcher.com/test', req)
     const requestWithCF = new Request(modifiedRequest)
-    requestWithCF.headers.set('Cache-Control','max-age=0')
+    requestWithCF.headers.set('Cache-Control','no-cache')
     return fetch(requestWithCF);
   }
 
