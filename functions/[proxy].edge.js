@@ -23,7 +23,7 @@ export default async function handler(req, context) {
     // const modifiedRequest = new Request('https://dummytest.requestcatcher.com/test', req)
     const requestWithCF = new Request(modifiedRequest)
     return fetch(requestWithCF, {
-      cf: {cacheTtl: 0}
+      cf: {cacheTtl: -1}
     });
   }
 
