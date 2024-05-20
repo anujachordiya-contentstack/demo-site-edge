@@ -25,10 +25,12 @@ export default async function handler(req, context) {
       cacheTtl: -1,
       cacheEverything: false
     }})
-    
+
     requestWithCF.headers.set('Cache-Control','no-cache')
     const resp = await fetch(requestWithCF);
-    console.log(JSON.stringify(resp.headers))
+    for (const key of resp.headers.keys()) {
+      console.log(key);
+    }
     return resp;
   }
 
