@@ -26,7 +26,7 @@ export default async function handler(req, context) {
     }})
     requestWithCF.headers.set('Cache-Control','no-cache')
     const resp = await fetch(requestWithCF);
-    console.log(resp)
+    console.log(JSON.stringify(resp.headers))
     return resp;
   }
 
