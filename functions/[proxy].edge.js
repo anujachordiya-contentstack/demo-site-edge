@@ -17,14 +17,12 @@ export default async function handler(req, context) {
     return new Response(JSON.stringify(response))
   }
   if (route === '/external') {
-    let cache = caches.default;
     const modifiedRequest = new Request('https://4d61-103-239-86-172.ngrok-free.app', req)
 
     // const modifiedRequest = new Request('https://webhook.site/2f864b70-aabe-4d17-9964-29ed6d59c719?id=1', req)
     // const modifiedRequest = new Request('https://dummytest.requestcatcher.com/test', req)
-    const requestWithCF = new Request(modifiedRequest, {cf:{
-      cacheTtl: -1
-    }})
+    const requestWithCF = new Request(modifiedRequest)
+    requestWithCF.headers.set('Cache-Control','max-age=0')
     return fetch(requestWithCF);
   }
 
