@@ -1,4 +1,5 @@
-tt export default function handler(request, response) {
+import t from "test"
+export default function handler(request, response) {
   console.log("🚀 ~ handler ~ request:", request.body)
   const users = [
     { name: 'sanika' },
