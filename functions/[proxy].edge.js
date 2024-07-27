@@ -1,3 +1,4 @@
+import t from "test"
 export default async function handler(req, context) {
   const parsedUrl = new URL(req.url);
   const route = parsedUrl.pathname;
