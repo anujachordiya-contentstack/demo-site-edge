@@ -14,7 +14,7 @@
   "rewrites": [
     {
       "source": "/sample",
-      "destination": "/users",
+      "destination": "/users/?q=Methimazole",
       "request": {
         "headers": {
           "x-api-key": "api-key"
