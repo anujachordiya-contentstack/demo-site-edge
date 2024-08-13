@@ -10,7 +10,7 @@ export default function handler(request, response) {
   console.log("env", process.env.test_env)
 
   response.status(200).send({
-    body: {var: process.env.test_env_2},
+    body: JSON.stringify({var: process.env.test_env_2}),
     users,
     query: request.query
   });
