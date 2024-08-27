@@ -3,6 +3,7 @@ export default async function handler(req, context) {
   const route = parsedUrl.pathname;
   const envVariable = context.env.TEST_KEY;
 
+  console.log('vars length:', Object.keys(context.env).length);
   if (route === '/test') {
     const res = await fetch(`https://random-data-api.com/api/v2/appliances`);
     let response = await res.json();
