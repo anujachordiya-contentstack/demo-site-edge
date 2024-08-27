@@ -8,6 +8,8 @@ export default function handler(request, response) {
 
   console.log("query params", request.query)
   console.log("env", process.env.test_env)
+  
+  console.log('vars length:', Object.keys(process.env).length);
 
   response.status(200).send({
     body: JSON.stringify({var2: process.env.test_env_2}),
