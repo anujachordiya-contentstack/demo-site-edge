@@ -13,7 +13,7 @@ const traceExporter = new OTLPTraceExporter({
     'Authorization': `Bearer ${otelAuthToken}`,
   },
 })
-
+console.log(otelUrl)
 // Custom span processor to log trace sending
 class LoggingSpanProcessor extends SimpleSpanProcessor {
   onEnd(span) {
