@@ -30,7 +30,7 @@ let metricExporter = null;
 
 if (shouldForwardTraces) {
   traceExporter = new OTLPTraceExporter({
-    url: otelUrl,
+    url: otelUrl+'/v1/traces',
     headers: {
       'Authorization': `Api-Token ${otelAuthToken}`,
       'Content-Type': 'application/x-protobuf',
@@ -38,7 +38,7 @@ if (shouldForwardTraces) {
   });
 
   metricExporter = new OTLPMetricExporter({
-    url: otelUrl,
+    url: otelUrl+'/v1/metrics', 
     headers: {
       'Authorization': `Api-Token ${otelAuthToken}`,
       'Content-Type': 'application/x-protobuf',
@@ -61,7 +61,7 @@ class LoggingSpanProcessor extends SimpleSpanProcessor {
       const dtSpan = oneAgentSdk.traceIncomingRemoteCall({
         serviceMethod: span.name,
         serviceName: 'next-app',
-        serviceEndpoint: otelUrl,
+        serviceEndpoint: otelUrl+'/v1/traces',
       });
 
       dtSpan.start(() => {
