@@ -1,4 +1,4 @@
-import { sendLogsAndMetrics } from './instrumentation.node.js';
+import { sendLogsAndMetrics, apiCallCounter as apiCallCounter2 } from './instrumentation.node.js';
 
 export async function register() {
   if (process.env.NEXT_RUNTIME === 'nodejs') {
@@ -6,3 +6,4 @@ export async function register() {
     sendLogsAndMetrics();
   }
 }
+export const apiCallCounter = apiCallCounter2;

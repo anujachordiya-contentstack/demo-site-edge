@@ -14,6 +14,9 @@ const shouldForwardTraces = true;
 
 class LoggingOTLPTraceExporter extends OTLPTraceExporter {
   export(spans, resultCallback) {
+    if (!spans.length) {
+      return;
+    }
     console.log(`Exporting ${spans.length || 0} trace(s)`);
     super.export(spans, (result) => {
       if (result.code === 0) { // 0 indicates success in OpenTelemetry
@@ -28,9 +31,10 @@ class LoggingOTLPTraceExporter extends OTLPTraceExporter {
 
 class LoggingOTLPMetricExporter extends OTLPMetricExporter {
   export(metrics, resultCallback) {
-    
-      console.log(`Exporting ${metrics.length || 0} metric(s)`);
-    
+    if (!metrics.length) {
+      return;
+    }
+    console.log(`Exporting ${metrics.length} metric(s)`);
     super.export(metrics, (result) => {
       if (result.code === 0) { // 0 indicates success in OpenTelemetry
         console.log('Metrics exported successfully with status code 200');
@@ -82,20 +86,20 @@ export function sendLogsAndMetrics() {
   sdk.start();
 }
 
-export const traceExporter = traceExporterInstance
+export const traceExporter = traceExporterInstance;
 export const metricExporter = metricExporterInstance;
 
-// const meterProvider = new MeterProvider({
-//   resource: new Resource({
-//     [SemanticResourceAttributes.SERVICE_NAME]: 'next-app',
-//   }),
-//   metricReader: metricExporter ? new PeriodicExportingMetricReader({
-//     exporter: metricExporter,
-//     exportIntervalMillis: 1000, // Export metrics every 1000 milliseconds
-//   }) : undefined,
-// });
+const meterProvider = new MeterProvider({
+  resource: new Resource({
+    [SemanticResourceAttributes.SERVICE_NAME]: 'next-app',
+  }),
+  metricReader: metricExporter ? new PeriodicExportingMetricReader({
+    exporter: metricExporter,
+    exportIntervalMillis: 1000, // Export metrics every 1000 milliseconds
+  }) : undefined,
+});
 
-// const meter = meterProvider.getMeter('api-metrics');
-// export const apiCallCounter = meter.createCounter('api_calls', {
-//   description: 'Counts the number of API calls',
-// });
+const meter = meterProvider.getMeter('api-metrics');
+export const apiCallCounter = meter.createCounter('api_calls', {
+  description: 'Counts the number of API calls',
+});
