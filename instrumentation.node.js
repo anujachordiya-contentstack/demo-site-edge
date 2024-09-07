@@ -22,7 +22,7 @@ class LoggingOTLPTraceExporter extends OTLPTraceExporter {
       if (result.code === 0) { // 0 indicates success in OpenTelemetry
         console.log('Traces exported successfully with status code 200');
       } else {
-        console.log(`Failed to export traces with status code ${result.code}`);
+        console.log(`Failed to export traces with status code ${JSON.stringify(result)}`);
       }
       resultCallback(result);
     });
@@ -39,7 +39,7 @@ class LoggingOTLPMetricExporter extends OTLPMetricExporter {
       if (result.code === 0) { // 0 indicates success in OpenTelemetry
         console.log('Metrics exported successfully with status code 200');
       } else {
-        console.log(`Failed to export metrics with status code ${result.code}`);
+        console.log(`Failed to export metrics with status code ${JSON.stringify(result)}`);
       }
       resultCallback(result);
     });
@@ -53,7 +53,7 @@ if (shouldForwardTraces) {
   traceExporterInstance = new LoggingOTLPTraceExporter({
     url: `${otelUrl}/v1/traces`,
     headers: {
-      'Authorization': `Api-Token ${otelAuthToken}`,
+      'Authorization': `Bearer ${otelAuthToken}`,
       'Content-Type': 'application/x-protobuf',
     },
   });
@@ -61,7 +61,7 @@ if (shouldForwardTraces) {
   metricExporterInstance = new LoggingOTLPMetricExporter({
     url: `${otelUrl}/v1/metrics`,
     headers: {
-      'Authorization': `Api-Token ${otelAuthToken}`,
+      'Api-Key': `${otelAuthToken}`,
       'Content-Type': 'application/x-protobuf',
     },
   });
@@ -93,8 +93,8 @@ const meterProvider = new MeterProvider({
   resource: new Resource({
     [SemanticResourceAttributes.SERVICE_NAME]: 'next-app',
   }),
-  metricReader: metricExporter ? new PeriodicExportingMetricReader({
-    exporter: metricExporter,
+  metricReader: metricExporterInstance ? new PeriodicExportingMetricReader({
+    exporter: metricExporterInstance,
     exportIntervalMillis: 1000, // Export metrics every 1000 milliseconds
   }) : undefined,
 });
