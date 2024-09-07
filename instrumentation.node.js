@@ -1,5 +1,6 @@
 import { NodeSDK } from '@opentelemetry/sdk-node';
-import { OTLPTraceExporter, OTLPMetricExporter } from '@opentelemetry/exporter-otlp-http';
+import { OTLPTraceExporter } from  '@opentelemetry/exporter-trace-otlp-proto';
+import { OTLPMetricExporter } from  '@opentelemetry/exporter-metrics-otlp-proto';
 import { Resource } from '@opentelemetry/resources';
 import { SimpleSpanProcessor } from '@opentelemetry/sdk-trace-node';
 import { PeriodicExportingMetricReader, MeterProvider } from '@opentelemetry/sdk-metrics';
@@ -17,12 +18,13 @@ class LoggingOTLPTraceExporter extends OTLPTraceExporter {
     if (!spans.length) {
       return;
     }
-    console.log(`Exporting ${spans.length || 0} trace(s)`);
+    console.log(`Exporting ${spans.length} trace(s)`);
+
     super.export(spans, (result) => {
-      if (result.code === 0) { // 0 indicates success in OpenTelemetry
+      if (result.code === 0) {
         console.log('Traces exported successfully with status code 200');
       } else {
-        console.log(`Failed to export traces with status code ${result.code}`);
+        console.log(`Failed to export traces with status code ${JSON.stringify(result)}`);
       }
       resultCallback(result);
     });
@@ -36,7 +38,7 @@ class LoggingOTLPMetricExporter extends OTLPMetricExporter {
     }
     console.log(`Exporting ${metrics.length} metric(s)`);
     super.export(metrics, (result) => {
-      if (result.code === 0) { // 0 indicates success in OpenTelemetry
+      if (result.code === 0) {
         console.log('Metrics exported successfully with status code 200');
       } else {
         console.log(`Failed to export metrics with status code ${result.code}`);
