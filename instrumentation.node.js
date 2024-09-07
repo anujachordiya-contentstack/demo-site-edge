@@ -54,7 +54,7 @@ if (shouldForwardTraces) {
     url: `${otelUrl}/v1/traces`,
     headers: {
       'Authorization': `Bearer ${otelAuthToken}`,
-      'Content-Type': 'application/json',
+      'Content-Type': process.env.CONTENT_TYPE,
     },
   });
 
@@ -62,7 +62,7 @@ if (shouldForwardTraces) {
     url: `${otelUrl}/v1/metrics`,
     headers: {
       'Api-Key': `${otelAuthToken}`,
-      'Content-Type': 'application/json',
+      'Content-Type': process.env.CONTENT_TYPE,
     },
   });
 
@@ -73,7 +73,7 @@ if (shouldForwardTraces) {
 
 const sdk = new NodeSDK({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'next-app',
+    [SemanticResourceAttributes.SERVICE_NAME]: process.env.APP_NAME,
   }),
   spanProcessor: traceExporterInstance ? new SimpleSpanProcessor(traceExporterInstance) : undefined,
   metricReader: metricExporterInstance ? new PeriodicExportingMetricReader({
@@ -91,7 +91,7 @@ export const metricExporter = metricExporterInstance;
 
 const meterProvider = new MeterProvider({
   resource: new Resource({
-    [SemanticResourceAttributes.SERVICE_NAME]: 'next-app',
+    [SemanticResourceAttributes.SERVICE_NAME]: process.env.APP_NAME,
   }),
   metricReader: metricExporterInstance ? new PeriodicExportingMetricReader({
     exporter: metricExporterInstance,
