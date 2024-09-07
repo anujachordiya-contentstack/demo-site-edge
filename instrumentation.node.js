@@ -54,7 +54,7 @@ if (shouldForwardTraces) {
     url: `${otelUrl}/v1/traces`,
     headers: {
       'Authorization': `Bearer ${otelAuthToken}`,
-      'Content-Type': 'application/x-protobuf',
+      'Content-Type': 'application/json',
     },
   });
 
@@ -62,7 +62,7 @@ if (shouldForwardTraces) {
     url: `${otelUrl}/v1/metrics`,
     headers: {
       'Api-Key': `${otelAuthToken}`,
-      'Content-Type': 'application/x-protobuf',
+      'Content-Type': 'application/json',
     },
   });
 
