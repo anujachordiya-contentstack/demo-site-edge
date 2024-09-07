@@ -61,7 +61,7 @@ if (shouldForwardTraces) {
   metricExporterInstance = new LoggingOTLPMetricExporter({
     url: `${otelUrl}/v1/metrics`,
     headers: {
-      'Api-Key': `${otelAuthToken}`,
+      'Authorization': `Bearer ${otelAuthToken}`,
       'Content-Type': process.env.CONTENT_TYPE,
     },
   });
