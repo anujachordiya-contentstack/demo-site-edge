@@ -1,30 +1,4024 @@
 {
   "redirects": [
     {
-      "source": "/demo",
-      "destination": "/",
-      "statusCode": 308,
-      "response": {
-        "headers": {
-          "x-powered-by": "launch"
-        }
-      }
-    }
-  ],
-  "rewrites": [
+      "source": "https://wedgewood-dev2.ckl.tools",
+      "destination": "https://wedgewood-dev1.ckl.tools",
+      "statusCode": 301
+    },
     {
-      "source": "/sample",
-      "destination": "/users",
-      "request": {
-        "headers": {
-          "x-api-key": "api-key"
-        }
-      },
-      "response": {
-        "headers": {
-          "x-powered-by": "launch"
-        }
-      }
+      "source": "/items/methimazole-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=Methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-tiny-tabs.html",
+      "destination": "/search/\\?q=Gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-transdermal-gel.html",
+      "destination": "/search/\\?q=Gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/famotidine-for-dogs-cats-and-horses.html",
+      "destination": "/medications/famotidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/enalapril-for-veterinary-use.html",
+      "destination": "/professional-monographs/enalapril-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/dexamethasone-for-veterinary-use.html",
+      "destination": "/professional-monographs/dexamethasone-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/chloramphenicol-palmitate-for-veterinary-use.html",
+      "destination": "/professional-monographs/chloramphenicol-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/specialmarkets/",
+      "destination": "/newsroom/wedgewood-pharmacy-to-acquire-503b-outsourcing-facility-and-zoopharm-specialty-pharmacy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/clindamycin-for-dogs-and-cats.html",
+      "destination": "/medications/clindamycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-ophthalmic-solution.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/facts-about-compounding.html",
+      "destination": "/support/compounding-faqs-and-facts-to-know/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/lactulose-for-veterinary-use.html",
+      "destination": "/professional-monographs/lactulose-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cholestyramine-capsule.html",
+      "destination": "/search/\\?q=Cholestyramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/bam-kit.html",
+      "destination": "/search/\\?q=BAM",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-introduces-blue-rabbit-the-next-generation-online-veterinary-pharmacy-solution-.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-introduces-blue-rabbit-the-next-generation-online-veterinary-pharmacy-solution",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/desmopressin-acetate-for-veterinary-use.html",
+      "destination": "/professional-monographs/desmopressin-acetate-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/phenylbutazone-for-horses.html",
+      "destination": "/medications/phenylbutazone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gentamicin-ketoconazole-triamcinolone-ez-dose-ear-pack.html",
+      "destination": "/search/\\?q=gentamicin%20ketoconazole%20triamcinolon",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/cisapride-for-dogs-and-cats.html",
+      "destination": "/medications/cisapride",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/pergolide-for-veterinary-use.html",
+      "destination": "/professional-monographs/pergolide-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-transdermal-gel.html",
+      "destination": "/search/\\?q=Methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/amikacin-for-veterinary-use.html",
+      "destination": "/professional-monographs/amikacin-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-quad-tab.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/selegiline-for-dogs.html",
+      "destination": "/medications/selegiline",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/ketoconazole-for-veterinary-use.html",
+      "destination": "/professional-monographs/ketoconazole-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/piroxicam-suppository.html",
+      "destination": "/search/\\?q=piroxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-tiny-tabs.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/tolfenamic-for-dogs-and-cats.html",
+      "destination": "/medications/tolfenamic ",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/fluoxetine-for-companion-animals.html",
+      "destination": "/medications/fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/furosemide-for-veterinary-use.html",
+      "destination": "/professional-monographs/furosemide-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/theophylline-for-veterinary-use.html",
+      "destination": "/professional-monographs/theophylline-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/desmopressin-ophthalmic-solution.html",
+      "destination": "/search/\\?q=desmopressin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clopidogrel-tiny-tabs.html",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cat/constipation.html",
+      "destination": "/site-improvements/",
+      "statusCode": 302
+    },
+    {
+      "source": "/wn/wedgewood-pharmacy-and-diamondback-drugs/",
+      "destination": "/newsroom/wedgewood-pharmacy-and-diamondback-drugs-animal-health-pharmacies-merge-to-provide-greater-benefits/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/altrenogest-injection-solution.html",
+      "destination": "/search/\\?q=altrenogest",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ertugliflozin-oral-paste.html",
+      "destination": "/search/\\?q=ertugliflozin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/maropitant-nasal-solution.html",
+      "destination": "/search/\\?q=maropitant",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-injection-solution.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/apomorphine-tablet.html",
+      "destination": "/search/\\?q=apomorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/simethicone/",
+      "destination": "/search/\\?q=simethicone",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/metronidazole-for-veterinary-use-ab.html",
+      "destination": "/professional-monographs/metronidazole-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aluminum-hydroxide-diphenhydramine-lidocaine-sucralfate-oral-topical-suspension.html",
+      "destination": "/search/\\?q=aluminum%20hydroxide%20diphenhydramine%20lidocaine%20sucralfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sucralfate-oral-powder.html",
+      "destination": "/search/\\?q=sucralfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-oral-suspension.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "/support/contact-us/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/azithromycin-for-companion-animals.html",
+      "destination": "/medications/azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/diethylstilbestrol-for-veterinary-use.html",
+      "destination": "/professional-monographs/diethylstilbestrol-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/amitriptyline-for-dogs-and-cats.html",
+      "destination": "/medications/amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/doxycycline-for-dogs-cats-and-horses.html",
+      "destination": "/medications/doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/amlodipine-for-dogs-and-cats.html",
+      "destination": "/medications/amlodipine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-as-hcl-tiny-tabs.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/acetylcysteine-for-dogs-cats-and-horses.html",
+      "destination": "/medications/acetylcysteine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/fever.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-trazodone-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=gabapentin%20trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/clopidogrel-for-veterinary-use.html",
+      "destination": "/professional-monographs/clopidogrel-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-topical-spray.html",
+      "destination": "/search/\\?q=amikacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cidofovir-ophthalmic-solution.html",
+      "destination": "/search/\\?q=cidofovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/spironolactone-for-dogs-and-cats.html",
+      "destination": "/medications/spironolactone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-oral-suspension.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/prazosin-for-veterinary-use.html",
+      "destination": "/professional-monographs/prazosin-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/ranitidine-for-veterinary-use.html",
+      "destination": "/professional-monographs/ranitidine-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-oral-suspension.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-ophthalmic-solution.html",
+      "destination": "/search/\\?q=cyclosporine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/calcium-glubionate-oral-syrup.html",
+      "destination": "/search/\\?q=calcium%20glubionate",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/ursodiol-for-veterinary-use.html",
+      "destination": "/professional-monographs/ursodiol-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mupirocin-topical-spray.html",
+      "destination": "/search/\\?q=mupirocin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cidofovir-topical-ointment.html",
+      "destination": "/search/\\?q=cidofovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/atenolol-tiny-tabs.html",
+      "destination": "/search/\\?q=atenolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cisapride-tiny-tabs.html",
+      "destination": "/search/\\?q=cisapride",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/aminopentamide-hydrogen-sulfate-for-dogs-and-cats.html",
+      "destination": "/medications/aminopentamide%20hydrogen%20sulfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/horse.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/butorphanol-tiny-tabs.html",
+      "destination": "/search/\\?q=butorphanol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-toothpaste.html",
+      "destination": "/search/\\?q=azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metformin-oral-powder.html",
+      "destination": "/search/\\?q=metformin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-oral-suspension.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/omeprazole-cimetidine-oral-powder.html",
+      "destination": "/search/\\?q=omeprazole%20cimetidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clopidogrel-transdermal-gel.html",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-transdermal-gel.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-otic-solution.html",
+      "destination": "/search/\\?q=amikacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/itraconazole-topical-cream.html",
+      "destination": "/search/\\?q=itraconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/allergies.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/misoprostol-oral-paste.html",
+      "destination": "/search/\\?q=misoprostol",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/rabbit.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/cyclosporine-tacrolimus-ophthalmic-solution.html",
+      "destination": "/search/\\?q=cyclosporine%20tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-tiny-tabs.html",
+      "destination": "/search/\\?q=amlodipine",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-and-diamondback-drugs-animal-health-pharmacies-merge-to-provide-greater-benefits-.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-and-diamondback-drugs-animal-health-pharmacies-merge-to-provide-greater-benefits/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acetaminophen-oral-powder.html",
+      "destination": "/search/\\?q=acetaminophen",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/gourmeds-tasty-chewable-tablets.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-quad-tab.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/triclabendazole-capsule.html",
+      "destination": "/search/\\?q=triclabendazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-mupirocin-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=ketoconazole%20mupirocin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/midazolam-nasal-gel.html",
+      "destination": "/search/\\?q=midazolam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-capsule.html",
+      "destination": "/search/\\?q=ivermectin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/appetite-stimulant.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-merges-with-blue-rabbit-to-deliver-exceptional-veterinary-pharmacy-services.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-merges-with-blue-rabbit-to-deliver-exceptional-veterinary-pharmacy-services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fenbendazole-capsule.html",
+      "destination": "/search/\\?q=fenendazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levothyroxine-transdermal-gel.html",
+      "destination": "/search/\\?q=levothyroxine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/prednisolone-acetate-ophthalmic-for-dogs-cats-and-horses.html",
+      "destination": "/search/\\?q=prednisolone%20acetate",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/chlorpromazine/",
+      "destination": "/search/\\?q=chlorpromazine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cetirizine-oral-powder.html",
+      "destination": "/search/\\?q=cetirizine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/phenobarbital-oral-suspension.html",
+      "destination": "/search/\\?q=phenobarbital",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/twist-a-dose-transdermal-applicator.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buprenorphine-oral-solution.html",
+      "destination": "/search/\\?q=buprenorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clopidogrel-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/flunixin-meglumine-for-horses.html",
+      "destination": "/search/\\?q=flunixin%20meglumine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/",
+      "destination": "/learning-center/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/secnidazole/",
+      "destination": "/search/\\?q=secnidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/maropitant-transdermal-gel.html",
+      "destination": "/search/\\?q=maropitant",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-chew-treat.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cat/feline-herpes-virus.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyzine-oral-powder.html",
+      "destination": "/search/\\?q=hydroxyzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/diawin/",
+      "destination": "/search/\\?q=diawin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mupirocin-shampoo.html",
+      "destination": "/search/\\?q=mupirocin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-trazodone-quad-tab.html",
+      "destination": "/search/\\?q=gabapentin%20trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-oral-suspension.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/maropitant-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=maropitant",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-transdermal-gel.html",
+      "destination": "/search/\\?q=amlodipine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/montelukast/",
+      "destination": "/search/\\?q=montelukast",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/tacrolimus-for-veterinary-use.html",
+      "destination": "/professional-monographs/tacrolimus-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/metronidazole-for-companion-animals.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/bam/",
+      "destination": "/search/\\?q=bam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-topical-spray.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/board-specialties/equine-medicine.html",
+      "destination": "/who-we-serve/equine-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/cyclosporine-for-veterinary-use.html",
+      "destination": "/professional-monographs/cyclosporine-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/polox-a-gel.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/melatonin-oral-powder.html",
+      "destination": "/search/\\?q=melatonin",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/how-do-i-fill-my-new-prescription.html",
+      "destination": "/support/faqs-for-pet-and-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trilostane-capsule.html",
+      "destination": "/search/\\?q=trilostane",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/lincomycin-for-veterinary-use.html",
+      "destination": "/professional-monographs/lincomycin-for-veterinary-use",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/rutin-capsule.html",
+      "destination": "/search/\\?q=rutin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/atenolol-for-dogs-and-cats.html",
+      "destination": "/medications/atenolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-enrofloxacin-triamcinolone-ez-dose-ear-pack.html",
+      "destination": "/search/\\?q=%20ketoconazole%20enrofloxacin%20triamcinolene",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diazepam-rectal-suppository.html",
+      "destination": "/search/\\?q=diazepam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-ophthalmic-ointment.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trazodone-oral-powder.html",
+      "destination": "/search/\\?q=trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-tetracaine-topical-cream.html",
+      "destination": "/search/\\?q=lidocaine%20tetracaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/budesonide-for-dogs-and-cats.html",
+      "destination": "/medications/budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-oral-powder.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/furosemide-oral-paste.html",
+      "destination": "/search/\\?q=furosemide",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/benazepril-for-dogs-and-cats.html",
+      "destination": "/medications/benazapril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cisapride-oral-suspension.html",
+      "destination": "/search/\\?q=cisapride",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-transdermal-gel.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/decoquinate-levamisole-oral-paste.html",
+      "destination": "/search/\\?q=decoquinate%20levamisole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-oral-paste.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/dog/constipation.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/gas-bloating.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/tetracycline-for-dogs-and-cats.html",
+      "destination": "/medications/tetracycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/bird.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/learning-center/professional-monographs/isoxsuprine-for-veterinary-use.html",
+      "destination": "/professional-monographs/isoxsuprine-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/colic.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/polyethylene-glycol-3350-capsule.html",
+      "destination": "/search/\\?q=polyethylene%20glycol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buprenorphine-transdermal-gel.html",
+      "destination": "/search/\\?q=buprenorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/imiquimod-topical-cream.html",
+      "destination": "/search/\\?q=imiquimod",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ondansetron-transdermal-gel.html",
+      "destination": "/search/\\?q=ondansetron",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-ketoconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=enrofloxacin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/centrine/",
+      "destination": "/search/\\?q=centrine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/guinea-pig.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/learning-center/professional-monographs/ponazuril-for-veterinary-use.html",
+      "destination": "/professional-monographs/ponazuril-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trilostane-oral-suspension.html",
+      "destination": "/search/\\?q=trilostane",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mirtazapine-transdermal-gel.html",
+      "destination": "/search/\\?q=mirtazapine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/buprenorphine-sr/",
+      "destination": "/search/\\?q=buprenorphine-sr",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/telmisartan-oral-suspension.html",
+      "destination": "/search/\\?q=telmisartan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sertraline-chew-treat.html",
+      "destination": "/search/\\?q=sertraline",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/cisplatin-beads/",
+      "destination": "/search/\\?q=cisplatin-beads",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cat/diarrhea.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/idoxuridine-for-veterinary-use.html",
+      "destination": "/professional-monographs/idoxuridine-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-tiny-tabs.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-oral-paste.html",
+      "destination": "/search/\\?q=dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/celecoxib/",
+      "destination": "/search/\\?q=celecoxib",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/",
+      "destination": "/who-we-serve/companion-pet-owners/ ",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/reptile.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/metronidazole-tylosin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=metronidazole%20tylosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/enrofloxacin-for-companion-animals.html",
+      "destination": "/medications/enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/minocycline.html",
+      "destination": "/medications/minocycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-oral-suspension.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-rectal-suppository.html",
+      "destination": "/search/\\?q=budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/cidofovir-ophthalmic-for-veterinary-use.html",
+      "destination": "/professional-monographs/cidofovir-ophthalmic-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/appetite-stimulant.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-topical-cream.html",
+      "destination": "/search/\\?q=amikacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/bitter-block.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lapatinib-capsule.html",
+      "destination": "/search/\\?q=lapatini",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ceftazidime-dexamethasone-otic-suspension.html",
+      "destination": "/search/\\?q=ceftazidime%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trazodone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-oral-powder-packet.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-miconazole-dexamethasone-otic-suspension.html",
+      "destination": "/search/\\?q=enrofloxacin%20miconazole%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mupirocin-otic-suspension.html",
+      "destination": "/search/\\?q=mupirocin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/protirelin/",
+      "destination": "/search/\\?q=protirelin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/omeprazole-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=omeprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/romifidine-hcl-injection-solution.html",
+      "destination": "/search/\\?q=romifidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/phenylbutazone-oral-paste.html",
+      "destination": "/search/\\?q=phenylutazone",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/uniary-tract-infection.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-oral-paste.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/phenoxybenzamine-for-veterinary-use.html",
+      "destination": "/professional-monographs/phenoxybenzamine-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tylosin-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=tylosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-ointment.html",
+      "destination": "/search/\\?q=cyclosporine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/expectorant.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/florfenicol-oral-suspension.html",
+      "destination": "/search/\\?q=florfenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/griseofulvin-powder-for-equine-use.html",
+      "destination": "/professional-monographs/griseofulvin-powder-for-equine-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/phenobarbital-transdermal-gel.html",
+      "destination": "/search/\\?q=phenobarital",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-gabapentin-capsule.html",
+      "destination": "/search/\\?q=fluoxetine%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/stanozolol-capsule.html",
+      "destination": "/search/\\?q=stanozolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/diarrhea.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/yohimbine-hcl-injection-solution.html",
+      "destination": "/search/\\?q=yohimbine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-oral-powder-packet.html",
+      "destination": "/search/\\?q=dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyproheptadine-oral-powder.html",
+      "destination": "/search/\\?q=cyproheptadine",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/otics.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-anhydrous-oral-suspension.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-enrofloxacin-tris-edta-otic-suspension.html",
+      "destination": "/search/\\?q=dexamethasone%20enrofloxacin%20tris%20edta",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/demecarium-bromide-for-veterinary-use.html",
+      "destination": "/professional-monographs/demecarium-bromide-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mirtazapine-tiny-tabs.html",
+      "destination": "/search/\\?q=mirtazapine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-dexamethasone-otic-solution.html",
+      "destination": "/search/\\?q=amikacin%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/telmisartan-oral-oil-suspension.html",
+      "destination": "/search/\\?q=telmisartan",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/gabapentin/#s4",
+      "destination": "/medications/gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/dog.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/gabapentin-medi-melts-tablets.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-oral-powder.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/arizona-location.html",
+      "destination": "/support/locations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fenbendazole-oral-powder.html",
+      "destination": "/search/\\?q=fenendazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/pimobendan-for-veterinary-use.html",
+      "destination": "/professional-monographs/pimobendan-transdermal-gel-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trilostane-oral-oil-suspension.html",
+      "destination": "/search/\\?q=trilostane",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-otic-suspension.html",
+      "destination": "/search/\\?q=dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acetyl-d-glucosamine-injection-solution.html",
+      "destination": "/search/\\?q=acetyl%20d%20glucosamine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/reserpine-oral-powder-packet.html",
+      "destination": "/search/\\?q=reserpine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clomipramine-transdermal-gel.html",
+      "destination": "/search/\\?q=clomipramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/interferon/",
+      "destination": "/search/\\?q=interferon",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pergolide-oral-paste.html",
+      "destination": "/search/\\?q=pergolide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-neomycin-polymyxin-b-otic-suspension.html",
+      "destination": "/search/\\?q=dexamethasone%20neomycin%20polymyxin%20b",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ursodiol-oral-suspension.html",
+      "destination": "/search/\\?q=ursodiol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-oral-powder.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/misoprostol-topical-gel.html",
+      "destination": "/search/\\?q=misoprostol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/secnidazole-capsule.html",
+      "destination": "/search/\\?q=secnidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levamisole-oral-paste.html",
+      "destination": "/search/\\?q=levamisole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/secnidazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=secnidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cisapride-lactulose-oral-suspension.html",
+      "destination": "/search/\\?q=cisapride%20lactulose",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/pellitol/",
+      "destination": "/search/\\?q=pellitol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/doxycycline/#s1",
+      "destination": "/medications/doxycycline/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-oral-powder.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clopidogrel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/decoquinate-levamisole-oral-powder.html",
+      "destination": "/search/\\?q=decoquinate%20levamisole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sucralfate-oral-paste.html",
+      "destination": "/search/\\?q=sucralfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cough.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-topical-gel.html",
+      "destination": "/search/\\?q=amikacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/oxantel-praziquantel-pyrantel-quad-tab.html",
+      "destination": "/search/\\?q=oxantel%20praziquantel%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clotrimazole-dexamethasone-neomycin-otic-topical-ointment.html",
+      "destination": "/search/\\?q=clotrimazole%20dexamethasone%20neomycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/voriconazole-ophthalmic-ointment.html",
+      "destination": "/search/\\?q=voriconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/board-of-directors.html",
+      "destination": "/about/leadership/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/darbepoetin/",
+      "destination": "/search/\\?q=darbepoetin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/",
+      "destination": "/medications/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-oral-suspension.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cat/antiemetic.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-ophthalmic-suspension.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-tiny-tabs.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-twist-a-taste-flavored-oral-gel.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-lidocaine-phonophoresis-gel.html",
+      "destination": "/search/\\?q=dexamethasone%20lidocaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diazepam-rectal-gel.html",
+      "destination": "/search/\\?q=diazepam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-topical-cream.html",
+      "destination": "/search/\\?q=ivermectin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mitomycin-topical-ointment.html",
+      "destination": "/search/\\?q=mitomycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-prednisolone-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=methimazole%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/tiopronin/",
+      "destination": "/search/\\?q=tiopronin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chlorpheniramine-transdermal-gel.html",
+      "destination": "/search/\\?q=chlorpheniramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/gabapentin/#s1",
+      "destination": "/medications/gabapentin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/methimazole/#s5",
+      "destination": "/medications/methimazole/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levamisole-oral-powder.html",
+      "destination": "/search/\\?q=levamisole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-aluminum-hydroxide-magnesium-hydroxide-simethicone-anhydrous-oral-suspension.html",
+      "destination": "/search/\\?q=lidocaine%20aluminum%20hydroxide%20magnesium%20hydroxide%20simethiconee",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/cholestyramine/",
+      "destination": "/search/\\?q=cholestyramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/quad-tabs.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/penicillamine-capsule.html",
+      "destination": "/search/\\?q=penicillamine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/apomorphine-injection-solution.html",
+      "destination": "/search/\\?q=apomorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-silver-sulfadiazine-topical-spray.html",
+      "destination": "/search/\\?q=lidocaine%20silver%20sulfadiazinee",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prazosin-tiny-tabs.html",
+      "destination": "/search/\\?q=prazosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/melatonin-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=melatonin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/praziquantel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=praziquantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-chew-treat.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-topical-ointment.html",
+      "destination": "/search/\\?q=cyclosporine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/posaconazole-topical-cream.html",
+      "destination": "/search/\\?q=posaconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/cat.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/benzocaine-lidocaine-tetracaine-topical-cream.html",
+      "destination": "/search/\\?q=benzocaine%20lidocaine%20tetracaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/tiny-tabs-pillable-tablets.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levothyroxine-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=levothyroxine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/famciclovir-for-veterinary-use.html",
+      "destination": "/professional-monographs/famciclovir-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/denamarin/",
+      "destination": "/search/\\?q=denamarin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aluminum-hydroxide-oral-powder.html",
+      "destination": "/search/\\?q=aluminum%20hydroxide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tramadol-transdermal-gel.html",
+      "destination": "/search/\\?q=tramadol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-topical-gel.html",
+      "destination": "/search/\\?q=lidocaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clomipramine-gabapentin-capsule.html",
+      "destination": "/search/\\?q=clomipramine%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-oral-paste.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/degenerative-myelopathy.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amphotericin-b-oral-suspension.html",
+      "destination": "/search/\\?q=amphotericin%20b",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/terazosin/",
+      "destination": "/search/\\?q=terazosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famotidine-ondansetron-chew-treat.html",
+      "destination": "/search/\\?q=famotidine%20ondansetron",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-prednisolone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=gabapentin%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mupirocin-triamcinolone-topical-spray.html",
+      "destination": "/search/\\?q=mupirocin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-gabapentin-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=amlodipine%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/equine-cushing-s.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/spironolactone-quad-tab.html",
+      "destination": "/search/\\?q=spironolactone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-quad-tab.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-melatonin-trazodone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=gabapentin%20melatonin%20trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/what-s-with-the-shorter-shelf-life.html\\?pageindex=1",
+      "destination": "/newsroom/what-s-with-the-shorter-shelf-life/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-oral-oil-suspension.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-oral-suspension.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metoclopramide-omeprazole-capsule.html",
+      "destination": "/search/\\?q=metoclopramide%20omeprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mirtazapine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=mirtazapine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/venlafaxine-capsule.html",
+      "destination": "/search/\\?q=venlafaxine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-transdermal-gel.html",
+      "destination": "/search/\\?q=amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-enrofloxacin-topical-cream.html",
+      "destination": "/search/\\?q=azithromycin%20enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/miconazole-ophthalmic-ointment.html",
+      "destination": "/search/\\?q=miconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methocarbamol-oral-powder.html",
+      "destination": "/search/\\?q=methocarbamol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-chew-treat.html",
+      "destination": "/search/\\?q=azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/decoquinate-capsule.html",
+      "destination": "/search/\\?q=decoquinate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/marbofloxacin-ketoconazole-triamcinolone-topical-spray.html",
+      "destination": "/search/\\?q=marbofloxacin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sildenafil-chew-treat.html",
+      "destination": "/search/\\?q=sildenafil",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clotrimazole-gentamicin-tetracaine-triamcinolone-topical-cream.html",
+      "destination": "/search/\\?q=clotrimazole%20gentamicin%20tetracaine%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-prednisolone-capsule.html",
+      "destination": "/search/\\?q=amitriptyline%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buspirone-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=buspirone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fenbendazole-praziquantel-pyrantel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=fenbendazole%20praziquantel%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/dog/sarcoid.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/terbinafine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=terbinafine",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/quad-tabs.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/miconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=miconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-ophthalmic-ointment.html",
+      "destination": "/search/\\?q=cyclosporine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyzine-guaifenesin-oral-powder.html",
+      "destination": "/search/\\?q=hydroxyzine%20guaifenesin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mometasone-otic-solution.html",
+      "destination": "/search/\\?q=mometasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chlorambucil-capsule.html",
+      "destination": "/search/\\?q=chloramucil",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clenbuterol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=clenbuterol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=ivermectin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/tinidazole/\\?pageindex=1",
+      "destination": "/search/\\?q=tinidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/estrone-injection-suspension.html",
+      "destination": "/search/\\?q=estrone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clotrimazole-nasal-solution.html",
+      "destination": "/search/\\?q=clotrimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-oral-paste.html",
+      "destination": "/search/\\?q=azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levetiracetam-transdermal-gel.html",
+      "destination": "/search/\\?q=levetiracetam",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/bird/anxiety.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/simethicone-oral-paste.html",
+      "destination": "/search/\\?q=simethicone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/phenobarbital-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=phenobarital",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/iodochlorhydroxyquin-oral-powder-packet.html",
+      "destination": "/search/\\?q=iodochlorhydroxyquin",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-to-acquire-503b-outsourcing-facility-and-zoopharm-specialty-pharmacy.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-to-acquire-503b-outsourcing-facility-and-zoopharm-specialty-pharmacy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/methimazole-for-veterinary-use.html",
+      "destination": "/professional-monographs/methimazole-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acetylcysteine-budesonide-nasal-spray.html",
+      "destination": "/search/\\?q=acetylcysteine%20budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/marquis/",
+      "destination": "/search/\\?q=marquis",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-gabapentin-transdermal-gel.html",
+      "destination": "/search/\\?q=fluoxetine%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practicesfda/",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-topical-solution.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famotidine-metoclopramide-oral-oil-suspension.html",
+      "destination": "/search/\\?q=famotidine%20metoclopramide",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/ferret/infection.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buspirone-transdermal-gel.html",
+      "destination": "/search/\\?q=buspirone",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/kanamycin-with-bismuth-subcarbonate-and-activated-attapulgite-for-veterinary-use.html",
+      "destination": "/professional-monographs/kanamycin-with-bismuth-subcarbonate-and-activated-attapulgite-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aspirin-transdermal-gel.html",
+      "destination": "/search/\\?q=aspirin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/levetiracetam-rectal-suppository.html",
+      "destination": "/search/\\?q=levetiracetam",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/ferrous-sulfate/",
+      "destination": "/search/\\?q=ferrous-sulfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/triamcinolone-tiny-tabs.html",
+      "destination": "/search/\\?q=triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/niacinamide-chew-treat.html",
+      "destination": "/search/\\?q=niacinamide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famciclovir-oral-oil-suspension.html",
+      "destination": "/search/\\?q=famciclovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-oral-powder-packet.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-zonisamide-oral-oil-suspension.html",
+      "destination": "/search/\\?q=gabapentin%20zonisamide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acepromazine-oral-paste.html",
+      "destination": "/search/\\?q=acepromazine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clarithromycin-doxycycline-capsule.html",
+      "destination": "/search/\\?q=clarithromycin%20doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sucralfate-oral-powder-packet.html",
+      "destination": "/search/\\?q=sucralfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/sodium-bicarbonate/",
+      "destination": "/search/\\?q=sodium-bicarbonate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ertugliflozin-capsule.html",
+      "destination": "/search/\\?q=ertugliflozin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mebendazole-praziquantel-pyrantel-capsule.html",
+      "destination": "/search/\\?q=mebendazole%20praziquantel%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/ferret/insulinoma.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dantrolene-oral-paste.html",
+      "destination": "/search/\\?q=dantrolene",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/guaifenesin-injection-solution.html",
+      "destination": "/search/\\?q=guaifenesin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nitrofurazone-topical-spray.html",
+      "destination": "/search/\\?q=nitrofurazone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/dog/bronchospasm.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/bethanechol-prazosin-as-hcl-capsule.html",
+      "destination": "/search/\\?q=bethanechol%20prazosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amantadine-carprofen-gabapentin-capsule.html",
+      "destination": "/search/\\?q=amantadine%20carprofen%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/idoxuridine-ophthalmic-solution.html",
+      "destination": "/search/\\?q=idoxurdine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-meloxicam-chew-treat.html",
+      "destination": "/search/\\?q=gabapentin%20meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buspirone-gabapentin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=buspirone%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-mupirocin-triamcinolone-topical-ointment.html",
+      "destination": "/search/\\?q=ketoconazole%20mupirocin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lansoprazole-capsule.html",
+      "destination": "/search/\\?q=lansoprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gentamicin-dexamethasone-nasal-solution.html",
+      "destination": "/search/\\?q=gentamicin%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/rutin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=rutin",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/bitter-block.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chloramphenicol-otic-solution.html",
+      "destination": "/search/\\?q=chloramphenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/rodent.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/about-us/new-jersey-location.html",
+      "destination": "/support/locations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/triclormethiazide-dexamethasone-oral-paste.html",
+      "destination": "/search/\\?q=triclormethiazide%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gramicidin-neomycin-triamcinolone-topical-cream.html",
+      "destination": "/search/\\?q=gramicidin%20neomycin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/dog/diabetes-insipidus.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/hydrocodone/\\?pageindex=1",
+      "destination": "/search/\\?q=hydrocodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/faqs-for-veterinarians.html",
+      "destination": "/support/faqs-for-veterinarians/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-topical-lotion.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cabergoline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=cabergoline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-mupirocin-otic-suspension.html",
+      "destination": "/search/\\?q=dexamethasone%20mupirocin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-chew-treat.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyzine-chew-treat.html",
+      "destination": "/search/\\?q=hydroxyzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/flunixin-oral-powder-packet.html",
+      "destination": "/search/\\?q=flunixin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/griseofulvin-oral-powder-packet.html",
+      "destination": "/search/\\?q=griseofulvin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclofenac-ophthalmic-ointment.html",
+      "destination": "/search/\\?q=diclofenac",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famciclovir-oral-paste.html",
+      "destination": "/search/\\?q=famciclovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/medi-melts.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tolazoline-injection-solution.html",
+      "destination": "/search/\\?q=tolazoline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/iodochlorhydroxyquin-oral-paste.html",
+      "destination": "/search/\\?q=iodochlorhydroxyquin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/paromomycin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=parmomycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/omeprazole-aluminum-hydroxide-magnesium-hydroxide-oral-powder.html",
+      "destination": "/search/\\?q=omeprazole%20aluminum%20hydroxide%20magnesium%20hydroxide",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/medetomidine/",
+      "destination": "/search/\\?q=medetomidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-oral-suspension.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-otic-solution.html",
+      "destination": "/search/\\?q=ketoconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-medi-melts-tablets.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lactulose-oral-powder.html",
+      "destination": "/search/\\?q=lactulose",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/theophylline-quad-tab.html",
+      "destination": "/search/\\?q=theophylline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lactulose-oral-solution.html",
+      "destination": "/search/\\?q=lactulose",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trilostane-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=trilostane",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/midazolam/",
+      "destination": "/search/\\?q=midazolam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-nasal-solution.html",
+      "destination": "/search/\\?q=dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/ferret.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/cisapride-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=cisapride",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-epinephrine-tetracaine-topical-gel.html",
+      "destination": "/search/\\?q=lidocaine%20epinephrine%20tetracaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-itraconazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=doxycycline%20itraconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/antipyretic.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/tylosin-capsule.html",
+      "destination": "/search/\\?q=tylosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclazuril-oral-powder-packet.html",
+      "destination": "/search/\\?q=diclazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-transdermal-gel.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acepromazine-oral-powder-packet.html",
+      "destination": "/search/\\?q=acepromazine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/topical-anesthesia.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sildenafil-oral-oil-suspension.html",
+      "destination": "/search/\\?q=sildenafil",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/xanax/",
+      "destination": "/search/\\?q=xanax",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/isoflupredone-acetate/",
+      "destination": "/search/\\?q=isoflupredone-acetate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-niacinamide-capsule.html",
+      "destination": "/search/\\?q=doxycycline%20niacinamide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-periodontal-gel.html",
+      "destination": "/search/\\?q=azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nitroglycerin-arginine-ketoprofen-topical-gel.html",
+      "destination": "/search/\\?q=nitroglycerin%20arginine%20ketoprofen",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/finasteride-oral-oil-suspension.html",
+      "destination": "/search/\\?q=finasteride",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/guinea-pig.html\\?pageindex=1",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/mirtazapine-prednisolone-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=mirtazapine%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/infection-bacterial.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/milk-thistle-extract-omeprazole-prednislone-capsule.html",
+      "destination": "/search/\\?q=milk%20thistle%20extract%20omeprazole%20prednislone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cetirizine-transdermal-gel.html",
+      "destination": "/search/\\?q=cetirizine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hmr-lignans-melatonin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=hmr%20lignans%20melatonin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-anhydrous-oral-solution.html",
+      "destination": "/search/\\?q=amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/camel.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/medications/prostaglandin/",
+      "destination": "/search/\\?q=prostaglandin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/alprazolam-transdermal-gel.html",
+      "destination": "/search/\\?q=alprazolam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/benzoyl-peroxide-metronidazole-topical-gel.html",
+      "destination": "/search/\\?q=benzoyl%20peroxide%20metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/allopurinol-anhydrous-oral-suspension.html",
+      "destination": "/search/\\?q=allopurinol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyurea-oral-oil-suspension.html",
+      "destination": "/search/\\?q=hydroxyurea",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diltiazem-oral-oil-suspension.html",
+      "destination": "/search/\\?q=diltiazem",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-tiny-tabs.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sirolimus-capsule.html",
+      "destination": "/search/\\?q=sirolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sulfamethoxazole-trimethoprim-otic-suspension.html",
+      "destination": "/search/\\?q=sulfamethoxazole%20trimethoprim",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pregabalin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=pregabalin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dehydrocholic-acid-capsule.html",
+      "destination": "/search/\\?q=dehydrocholic%20acid",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-ketoconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=amikacin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metformin-oral-paste.html",
+      "destination": "/search/\\?q=metformin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclosenac-sodium-dmso-topical-ointment.html",
+      "destination": "/search/\\?q=diclosenac%20sodium%20dmso",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-appoints-maria-kraus-cpa-as-cfo.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-appoints-maria-kraus-cpa-as-cfo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cat/ulcers.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/auto-refill-program.html",
+      "destination": "/support/faqs-for-pet-and-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-oral-suspension.html",
+      "destination": "/search/\\?q=amlodipine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/apomorphine/",
+      "destination": "/search/\\?q=apomorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/diphenoxylate--atropine/\\?pageindex=1",
+      "destination": "/search/\\?q=diphenoxylate--atropine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/omeprazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=omeprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-transdermal-gel.html",
+      "destination": "/search/\\?q=dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acetylcysteine-nasal-spray.html",
+      "destination": "/search/\\?q=acetylcysteine",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/board-specialties/zoological-medicine.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/neomycin-nystatin-triamcinolone-topical-cream.html",
+      "destination": "/search/\\?q=neomycin%20nystatin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chloramphenicol-capsule.html",
+      "destination": "/search/\\?q=chloramphenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-methocarbamol-selegiline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=gabapentin%20methocarbamol%20selegiline",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/verapamil/",
+      "destination": "/search/\\?q=verapamil",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/magnesium-sulfate-tryptophan-oral-paste.html",
+      "destination": "/search/\\?q=magnesium%20sulfate%20tryptophan",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-completes-acquisition-of-wildlife-pharmaceuticals-and-its-subsidiary-zoopharm.html\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-completes-acquisition-of-wildlife-pharmaceuticals-and-its-subsidiary-zoopharm/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/praziquantel-injection-solution.html",
+      "destination": "/search/\\?q=praziquantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-compounds-thyroid-tablets-during-manufacturer-backorder-of-armour-thyroid-tablets.html",
+      "destination": "/newsroom/wedgewood-pharmacy-compounds-thyroid-tablets-during-manufacturer-backorder-of-armour-thyroid-tablets/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ursodiol-tiny-tabs.html",
+      "destination": "/search/\\?q=ursodiol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/voriconazole/",
+      "destination": "/search/\\?q=voriconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-quad-tab.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/potassium-bromide-for-veterinary-use.html",
+      "destination": "/professional-monographs/potassium-bromide-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amoxicillin-clavulanate-nystatin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=amoxicillin%20clavulanate%20nystatin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/melphalan-capsule.html",
+      "destination": "/search/\\?q=melphalan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/theophylline-oral-suspension.html",
+      "destination": "/search/\\?q=theophylline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/maropitant-oral-suspension.html",
+      "destination": "/search/\\?q=maropitant",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/tussigon/",
+      "destination": "/search/\\?q=tussigon",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/spironolactone-transdermal-gel.html",
+      "destination": "/search/\\?q=spironolactone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/isoxsuprine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=isoxsuprine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amikacin-betamethasone-topical-spray.html",
+      "destination": "/search/\\?q=amikacin%20betamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methocarbamol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=methocarbamol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-topical-gel.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/phenylbutazone-oral-powder.html",
+      "destination": "/search/\\?q=phenylbutazone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-metronidazole-maropitant-prednisolone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=amlodipine%20metronidazole%20maropitant%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/florfenicol-capsule.html",
+      "destination": "/search/\\?q=florfenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/losartan/",
+      "destination": "/search/\\?q=losartan",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/chinchilla.html",
+      "destination": "/products/",
+      "statusCode": 302
+    },
+    {
+      "source": "/items/pentoxifylline-oral-powder.html",
+      "destination": "/search/\\?q=pentoxifylline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/lidocaine-tetracaine-topical-ointment.html",
+      "destination": "/search/\\?q=lidocaine%20tetracaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amoxicillin-clavulanate-ketoconazole-neomycin-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=amoxicillin%20clavulanate%20ketoconazole%20neomycin%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/acyclovir/",
+      "destination": "/search/\\?q=acyclovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/venlafaxine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=venlafaxine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-nasal-suspension.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/furosemide-gabapentin-methimazole-capsule.html",
+      "destination": "/search/\\?q=furosemide%20gabapentin%20methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/azithromycin-tiny-tabs.html",
+      "destination": "/search/\\?q=azithromycin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclazuril-levamisole-oral-paste.html",
+      "destination": "/search/\\?q=diclazuril%20levamisole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cisapride-lactulose-oral-oil-suspension.html",
+      "destination": "/search/\\?q=cisapride%20lactulose",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/isotretinoin/",
+      "destination": "/search/\\?q=isotretinoin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pergolide-oral-powder-packet.html",
+      "destination": "/search/\\?q=pergolide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ceftazidime-otic-suspension.html",
+      "destination": "/search/\\?q=ceftazidime",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/benazepril-furosemide-pimobendan-capsule.html",
+      "destination": "/search/\\?q=benazepril%20furosemide%20pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyzine-transdermal-gel.html",
+      "destination": "/search/\\?q=hydroxyzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/propranolol-transdermal-gel.html",
+      "destination": "/search/\\?q=propanolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diazoxide-capsule.html",
+      "destination": "/search/\\?q=diazoxide",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/estrone-for-veterinary-use.html",
+      "destination": "/professional-monographs/estrone-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/imipramine-oral-paste.html",
+      "destination": "/search/\\?q=imipramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/cancer.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/dog/infection-fungal.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-topical-cream.html",
+      "destination": "/search/\\?q=ketoconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/montelukast-oral-oil-suspension.html",
+      "destination": "/search/\\?q=montelukast",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nystatin-topical-cream.html",
+      "destination": "/search/\\?q=nystatin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clotrimazole-otic-solution.html",
+      "destination": "/search/\\?q=clotrimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/phenylpropanolamine/",
+      "destination": "/search/\\?q=phenylpropanolamine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/fludrocortisone-acetate-for-veterinary-use.html",
+      "destination": "/professional-monographs/fludrocortisone-acetate-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/lidocaine/",
+      "destination": "/search/\\?q=lidocaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/benzocaine-hydrocortisone-zinc-oxide-topical-ointment.html",
+      "destination": "/search/\\?q=benzocaine%20hydrocortisone%20zinc%20oxide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-prednisone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=doxycycline%20prednisone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/piroxicam-transdermal-gel.html",
+      "destination": "/search/\\?q=piroxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ursodiol-tablet.html",
+      "destination": "/search/\\?q=ursodiol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-oral-suspension.html",
+      "destination": "/search/\\?q=budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sildenafil-oral-suspension.html",
+      "destination": "/search/\\?q=sildenafil",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meclizine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=meclizine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trimethoprim-sulfamethoxazole-oral-powder.html",
+      "destination": "/search/\\?q=trimethoprim%20sulfamethoxazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pregabalin-capsule.html",
+      "destination": "/search/\\?q=pregabalin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famotidine-metoclopramide-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=famotidine%20metoclopramide",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/innovative-dosage-forms/otics.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/potassium-gluconate-chew-treat.html",
+      "destination": "/search/\\?q=potassium%20gluconate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/alprazolam-chew-treat.html",
+      "destination": "/search/\\?q=alprazolam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clomipramine-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=clomipramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tylosin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=tylosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/marbofloxacin/",
+      "destination": "/search/\\?q=marbofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fluoxetine-twist-a-taste-flavored-oral-gel.html",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pimobendan-capsule.html",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-oral-powder.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/florfenicol/",
+      "destination": "/search/\\?q=florfenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clotrimazole-dexamethasone-otic-suspension.html",
+      "destination": "/search/\\?q=clotrimazole%20dexamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-anhydrous-oral-suspension.html",
+      "destination": "/search/\\?q=ivermectin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-extended-release-polymer-injection.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nystatin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=nystatin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-methimazole-prednisolone-capsule.html",
+      "destination": "/search/\\?q=gabapentin%20methimazole%20prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trazodone-transdermal-gel.html",
+      "destination": "/search/\\?q=trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chlorpheniramine-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=chlorpheniramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/potassium-bromide-oral-powder.html",
+      "destination": "/search/\\?q=potassium%20bromide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tinidazole-capsule.html",
+      "destination": "/search/\\?q=tinidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ponazuril-oral-powder.html",
+      "destination": "/search/\\?q=ponazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/piroxicam-oral-powder.html",
+      "destination": "/search/\\?q=piroxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prazosin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=prazosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/neomycin-tetracaine-triamcinolone-topical-powder.html",
+      "destination": "/search/\\?q=neomycin%20tetracaine%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/ceftazidime/",
+      "destination": "/search/\\?q=ceftazidime",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisone-capsule.html",
+      "destination": "/search/\\?q=prednisone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/itraconazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=itraconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/bezafibrate-capsule.html",
+      "destination": "/search/\\?q=bezafibrate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/buprenorphine-injection-solution.html",
+      "destination": "/search/\\?q=buprenorphine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gentamicin-ketoconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=gentamicin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/oxytetracycline/",
+      "destination": "/search/\\?q=oxytetracycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/autoimmune-diseases.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gabapentin-oral-paste.html",
+      "destination": "/search/\\?q=gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tretinoin-topical-solution.html",
+      "destination": "/search/\\?q=tretinoin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/flunixin-oral-paste.html",
+      "destination": "/search/\\?q=oxytetracycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/terbutaline/",
+      "destination": "/search/\\?q=terbutaline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/guaifenesin-oral-powder.html",
+      "destination": "/search/\\?q=guaifenesin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/losartan-potassium-capsule.html",
+      "destination": "/search/\\?q=losartan%20potassium",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/butorphanol-chew-treat.html",
+      "destination": "/search/\\?q=butorphanol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-ketoconazole-triamcinolone-otic-suspension.html",
+      "destination": "/search/\\?q=enrofloxacin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/vitamin-a-oral-oil-suspension.html",
+      "destination": "/search/\\?q=vitamin%20a",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methenamine-capsule.html",
+      "destination": "/search/\\?q=methenamine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-injection-suspension.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/marbofloxacin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=marbofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/zinc-methionine-capsule.html",
+      "destination": "/search/\\?q=zinc%20methionine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/itraconazole-dmso-nasal-suspension.html",
+      "destination": "/search/\\?q=itraconazole%20dmso",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metoclopramide-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=metoclopramide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nalmed-kit.html",
+      "destination": "/search/\\?q=nalmed%20kit",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/topiramate/",
+      "destination": "/search/\\?q=topiramate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chloramphenicol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=chloramphenicol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/horse/epm.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cimetidine-chew-treat.html",
+      "destination": "/search/\\?q=cimetidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-otic-ointment.html",
+      "destination": "/search/\\?q=ivermectin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/altrenogest-/",
+      "destination": "/search/\\?q=altrenogest",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-twist-a-taste-flavored-oral-gel.html",
+      "destination": "/search/\\?q=budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/pentosan-information-resources.html",
+      "destination": "/medications/pentosan-polysulfate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/trazodone-capsule.html",
+      "destination": "/search/\\?q=trazodone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/clopidogrel/\\?pageindex=1",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclazuril-levamisole-vitamin-e-oral-oil-suspension.html",
+      "destination": "/search/\\?q=diclazuril%20levamisole%20vitamin%20e",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sulfadiazine-trimethoprim-oral-suspension.html",
+      "destination": "/search/\\?q=sulfadiazine%20trimethoprim",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ronidazole-oral-paste.html",
+      "destination": "/search/\\?q=ronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/niacinamide-tetracycline-capsule.html",
+      "destination": "/search/\\?q=niacinamide%20tetracycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/zinc-sulfate-capsule.html",
+      "destination": "/search/\\?q=zinc%20sulfate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/escitalopram-oral-oil-suspension.html",
+      "destination": "/search/\\?q=escitalopram",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-tiny-tabs.html/1000",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pyrimethamine-sulfadiazine-folic-acid-capsule.html",
+      "destination": "/search/\\?q=pyrimethamine%20sulfadiazine%20folic%20acid",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-now-compounds-omeprazole-im-injection-suspension.html",
+      "destination": "/newsroom/wedgewood-pharmacy-now-compounds-omeprazole-im-injection-suspension/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famotidine-oral-suspension.html",
+      "destination": "/search/\\?q=famotidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/succimer-capsule.html",
+      "destination": "/search/\\?q=succimer",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/gentamicin-betamethasone-miconazole-otic-ointment.html",
+      "destination": "/search/\\?q=gentamicin%20betamethasone%20miconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/cephalexin/",
+      "destination": "/search/\\?q=cephalexin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/famotidine-gabapentin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=famotidine%20gabapentin",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/protamine-zinc-insulin-for-veterinary-use.html",
+      "destination": "/professional-monographs/protamine-zinc-insulin-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/tiny-tabs-pillable-tablets.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/calcium-glubionate-oral-oil-suspension.html",
+      "destination": "/search/\\?q=calcium%20glubionate",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/diltiazem-for-dogs-and-cats.html",
+      "destination": "/search/\\?q=diltiazem",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ondansetron-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=ondansetron",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoconazole-mupirocin-silver-sulfadiazine-triamcinalone-otic-ointment.html",
+      "destination": "/search/\\?q=ketoconazole%20mupirocin%20silver%20sulfadiazine%20triamcinalone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-famotidine-anhydrous-oral-solution.html",
+      "destination": "/search/\\?q=amlodipine%20famotidine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ponazuril-oral-paste.html",
+      "destination": "/search/\\?q=ponazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-omeprazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=meloxicam%20omeprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/nystatin/",
+      "destination": "/search/\\?q=nystatin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-capsule.html",
+      "destination": "/search/\\?q=cyclosporine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clindamycin-ketoconazole-triamcinolone-otic-ointment.html",
+      "destination": "/search/\\?q=clindamycin%20ketoconazole%20triamcinolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/clotrimazole/",
+      "destination": "/search/\\?q=clotrimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/guaifenesin-theophylline-chew-treat.html",
+      "destination": "/search/\\?q=guaifenesin%20theophylline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/desonide-tretinoin-topical-cream.html",
+      "destination": "/search/\\?q=desonide%20tretinoin",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/flavors-available.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/isoflupredone/",
+      "destination": "/search/\\?q=isoflupredone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/atenolol-oral-suspension.html",
+      "destination": "/search/\\?q=atenolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/tylosin/",
+      "destination": "/search/\\?q=tylosin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metoclopramide-omeprazole-ondansetron-capsule.html",
+      "destination": "/search/\\?q=metoclopramide%20omeprazole%20ondansetron",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acetylcysteine-oral-powder.html",
+      "destination": "/search/\\?q=acetylcysteine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chlorambucil-tablet.html",
+      "destination": "/search/\\?q=chlorambucil",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/board-specialties/oncology.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/maropitant-oral-oil-suspension.html",
+      "destination": "/search/\\?q=maropitant",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/zonisamide-oral-oil-suspension.html",
+      "destination": "/search/\\?q=zonisamide",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/haloperidol/",
+      "destination": "/search/\\?q=haloperidol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/sulfamethoxazole/",
+      "destination": "/search/\\?q=sulfamethoxazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/misoprostol-gourmeds-chewable-tablets.html",
+      "destination": "/search/\\?q=misoprostol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/stanozolol/",
+      "destination": "/search/\\?q=stanozolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/naltrexone-capsule.html",
+      "destination": "/search/\\?q=naltrexone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/dicyclomine/",
+      "destination": "/search/\\?q=dicyclomine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-otic-suspension.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/febendazole/",
+      "destination": "/search/\\?q=febendazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-ointment.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-buspirone-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=amitriptyline%20buspirone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enalapril-maleate-furosemide-pimobendan-oral-oil-suspension.html",
+      "destination": "/search/\\?q=enalapril%20maleate%20furosemide%20pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-glucosamine-chondroitin-chew-treat.html",
+      "destination": "/search/\\?q=amlodipine%20glucosamine%20chondroitin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/linezolid-capsule.html",
+      "destination": "/search/\\?q=linezolid",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/piroxicam-tiny-tabs.html",
+      "destination": "/search/\\?q=piroxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/carbamazepine/",
+      "destination": "/search/\\?q=carbamazepine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/betamethasone/",
+      "destination": "/search/\\?q=betamethasone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-chew-treat.html",
+      "destination": "/search/\\?q=budesonide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/minocycline-oral-powder.html",
+      "destination": "/search/\\?q=minocycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/pet-and-horse-owners/gourmeds-tasty-chewable-tablets.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/telmisartan-quad-tab.html",
+      "destination": "/search/\\?q=telmisartan",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydroxyzine-oral-powder-packet.html",
+      "destination": "/search/\\?q=hydroxyzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ponazuril-oral-oil-suspension.html",
+      "destination": "/search/\\?q=ponazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/bethanechol/",
+      "destination": "/search/\\?q=bethanechol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-twist-a-dose-transdermal-gel.html",
+      "destination": "/search/\\?q=amlodipine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clopidogrel-chew-treat.html",
+      "destination": "/search/\\?q=clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/zinc-gluconate-capsule.html",
+      "destination": "/search/\\?q=zinc%20gluconate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clomipramine-tiny-tabs.html",
+      "destination": "/search/\\?q=clomipramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ivermectin-pyrantel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=ivermectin%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=amitriptyline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/diclazuril-oral-powder.html",
+      "destination": "/search/\\?q=diclazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/chlorambucil-chew-treat.html",
+      "destination": "/search/\\?q=chorambucil",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-clopidogrel-capsule.html",
+      "destination": "/search/\\?q=amlodipine%20clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enalapril-furosemide-gabapentin-pimobendan-oral-oil-suspension.html",
+      "destination": "/search/\\?q=enalapril%20furosemide%20gabapentin%20pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/potassium-citrate/",
+      "destination": "/search/\\?q=potassium-citrate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/enrofloxacin-oral-paste.html",
+      "destination": "/search/\\?q=enrofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/cyclobenzaprine/",
+      "destination": "/search/\\?q=cyclobenzaprine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/diclofenac-sodium/",
+      "destination": "/search/\\?q=diclofenac-sodium",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-omeprazole-oral-oil-suspension.html",
+      "destination": "/search/\\?q=budesonide%20omeprazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/paroxetine-chew-treat.html",
+      "destination": "/search/\\?q=paroxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/bird/infection-bacterial.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/urine-acidification.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cholestyramine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=cholestyramine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/calcitriol-oral-oil-solution.html",
+      "destination": "/search/\\?q=calcitriol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/benazepril-pimobendan-spirnolactone-ez-dose-micro-transdermal-gel.html",
+      "destination": "/search/\\?q=benazepril%20pimobendan%20spirnolactone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/oxantel-praziquantel-pyrantel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=oxantel%20praziquantel%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclophosphamide-capsule.html",
+      "destination": "/search/\\?q=cyclophosphamide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dexamethasone-diclosenac-dmso-topical-ointment.html",
+      "destination": "/search/\\?q=dexamethasone%20diclosenac%20dmso",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/fluoxetine/\\?pageindex=1",
+      "destination": "/search/\\?q=fluoxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/stanozolol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=stanzolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/clonazepam/",
+      "destination": "/search/\\?q=clonazepam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/reserpine-injection-solution.html",
+      "destination": "/search/\\?q=resperine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tetracycline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=tetracycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/tacrolimus-nasal-solution.html",
+      "destination": "/search/\\?q=tacrolimus",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/doxycycline-chew-treat.html",
+      "destination": "/search/\\?q=doxycycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/acyclovir-oral-oil-suspension.html",
+      "destination": "/search/\\?q=acyclovir",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cisapride-oral-powder.html",
+      "destination": "/search/\\?q=cisapride",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/carbimazole-transdermal-gel.html",
+      "destination": "/search/\\?q=carbimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/atenolol-transdermal-gel.html",
+      "destination": "/search/\\?q=atenolol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aspirin-oral-oil-suspension.html",
+      "destination": "/search/\\?q=aspirin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-medi-melts-tablets.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/torsemide-capsule.html",
+      "destination": "/search/\\?q=torsemide",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/diclazuril/",
+      "destination": "/search/\\?q=diclazuril",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/minocycline-oral-oil-suspension.html",
+      "destination": "/search/\\?q=minocycline",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/silver-sulfadiazine-polymyxin-b-triamcinolone-tetracaine-otic-powder.html",
+      "destination": "/search/\\?q=silver%20sulfadiazine%20polymyxin%20b%20triamcinolone%20tetracaine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/sodium-chloride/",
+      "destination": "/search/\\?q=sodium-chloride",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cetirizine-hydroxyzine-oral-powder.html",
+      "destination": "/search/\\?q=cetirizine%20hydroxyzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/betamethasone-clotrimazole-gentamicin-polox-a-gel-otic.html",
+      "destination": "/search/\\?q=betamethasone%20clotrimazole%20gentamicin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ciprofloxacin-capsule.html",
+      "destination": "/search/\\?q=ciprofloxacin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/bam/\\?pageindex=1",
+      "destination": "/search/\\?q=bam",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aspirin-oral-powder.html",
+      "destination": "/search/\\?q=aspirin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/methimazole-capsule.html",
+      "destination": "/search/\\?q=methimazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/omeprazole-misoprostol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=omeprazole%20misoprostol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cetirizine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=cetririzine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medical-conditions/gout.html",
+      "destination": "/site-improvements/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-trimethoprim-sulfadiazine-oral-oil-suspension.html",
+      "destination": "/search/\\?q=metronidazole%20trimethoprim%20sulfadiazine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-oral-paste.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pioglitazone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=pioglitazone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/prednisolone-oral-granules.html",
+      "destination": "/search/\\?q=prednisolone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/oxybutynin-chloride/",
+      "destination": "/search/\\?q=oxybutynin-chloride",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amlodipine-clpidogrel-transdermal-gel.html",
+      "destination": "/search/\\?q=amlodipine%20clopidogrel",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/rutin/",
+      "destination": "/search/\\?q=rutin",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/furazolidone/",
+      "destination": "/search/\\?q=furazolidone",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/posaconazole/",
+      "destination": "/search/\\?q=posaconazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/tretinoin/",
+      "destination": "/search/\\?q=tretinoin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ketoprofen-oral-oil-suspension.html",
+      "destination": "/search/\\?q=ketoprofen",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/metronidazole-twist-a-taste-flavored-oral-gel.html",
+      "destination": "/search/\\?q=metronidazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/losartan-capsule.html",
+      "destination": "/search/\\?q=losartan",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/decoquinate/",
+      "destination": "/search/\\?q=decoquinate",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/dantrolene-oral-oil-suspension.html",
+      "destination": "/search/\\?q=dantrolene",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/milk-thistle-ursodiol-oral-oil-suspension.html",
+      "destination": "/search/\\?q=milk%20thistle%20ursodiol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydrocortisone-oral-oil-suspension.html",
+      "destination": "/search/\\?q=hydrocortisone",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/meloxicam-chew-treat.html",
+      "destination": "/search/\\?q=meloxicam",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/press-room/wedgewood-pharmacy-completes-acquisition-of-wildlife-pharmaceuticals-and-its-subsidiary-zoopharm.html/1000\\?pageindex=1",
+      "destination": "/newsroom/wedgewood-pharmacy-completes-acquisition-of-wildlife-pharmaceuticals-and-its-subsidiary-zoopharm/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/ethambutol-anhydrous-oral-suspension.html",
+      "destination": "/search/\\?q=ethambutol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/allopurinol-capsule.html",
+      "destination": "/search/\\?q=allopurinol",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/digoxin-capsule.html",
+      "destination": "/search/\\?q=digoxin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nitrofurantoin-capsule.html",
+      "destination": "/search/\\?q=nitrofurantoin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/folic-acid-capsule.html",
+      "destination": "/search/\\?q=folic%20acid",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/mebendazole-praziquantel-pyrantel-oral-oil-suspension.html",
+      "destination": "/search/\\?q=mebendazole%20praziquantel%20pyrantel",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/diclosenac-sodium/",
+      "destination": "/search/\\?q=diclosenac-sodium",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/carbamazepine-cyproheptadine-oral-paste.html",
+      "destination": "/search/\\?q=carbamazepine%20cyproheptadine",
+      "statusCode": 301
+    },
+    {
+      "source": "/medications/pimobendan/\\?pageindex=1",
+      "destination": "/search/\\?q=pimobendan",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/posts/:postId.html",
+      "destination": "/blog/:postId",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/amitriptyline-oral-suspension.html",
+      "destination": "/medications/amitriptyline/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cefazolin-otic-solution.html",
+      "destination": "/search/\\?q=cefazolin",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/clemastine-fumarate-oral-suspension.html",
+      "destination": "/search/\\?q=Clemastine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/flunixin-meglumine-oral-powder-packet.html",
+      "destination": "/items/flunixin-oral-powder-packet.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/guaifenesin-pyrilamine-oral-granules.html",
+      "destination": "/medications/guaifenesin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/isoflupredone-acetate-injection-suspension.html",
+      "destination": "/items/isoflupredone-injection-suspension.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/miconazole-dexamethasone-otic-solution.html",
+      "destination": "/medications/miconazole/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/neomycin-methscopolamine-oral-solution.html",
+      "destination": "/medications/neomycin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/nystatin-oral-suspension.html",
+      "destination": "/medications/nystatin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pergolide-troche.html",
+      "destination": "/medications/pergolide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sodium-bicarbonate-inhalation-solution.html",
+      "destination": "/medications/sodium-bicarbonate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/dexamethasone-21-isoniconate-for-veterinary-use.html",
+      "destination": "/medications/dexamethasone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/diazepam-for-veterinary-use.html",
+      "destination": "/medications/diazepam/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/medroxyprogesterone-acetate-for-veterinary-use.html",
+      "destination": "/medications/medroxyprogesterone-acetate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/pyrimethamine-and-sulfadiazine-combination-for-veterinary-use.html",
+      "destination": "/search/\\?q=Pyrimethamine%20Sulfadiazine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/trilostane-for-veterinary-use.html",
+      "destination": "/medications/trilostane/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/trilostane-for-veterinary-use.html",
+      "destination": "/medications/tylosin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/twist-a-dose-instructional-video.html",
+      "destination": "https://www.youtube.com/watch?v=UaGjowwHFek",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/careers.html",
+      "destination": "/about/join-our-team/",
+      "statusCode": 301
+    },
+    {
+      "source": "/diazepam.asp",
+      "destination": "/medications/diazepam/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/aluminum-hydroxide-oral-suspension.html",
+      "destination": "/search/\\?q=Aluminum%20Hydroxide",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/budesonide-nasal-spray.html",
+      "destination": "/medications/budesonide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/cyclosporine-ophthalmic-gel.html",
+      "destination": "/medications/cyclosporine/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/fenbendazole-oral-suspension.html",
+      "destination": "/search/\\?q=Fenbendazole",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/furosemide-injection-solution.html",
+      "destination": "/medications/furosemide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/hydrocodone-chew-treat.html",
+      "destination": "/medications/hydrocodone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/kanamycin-pectin-bismuth-subcarbonate-activated-attapulgite-capsule.html",
+      "destination": "/medications/kanamycin/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/paroxetine-oral-suspension.html",
+      "destination": "/search/\\?q=Paroxetine",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/pentoxifylline-injection-solution.html",
+      "destination": "/medications/pentoxifylline/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/potassium-chloride-injection-solution.html",
+      "destination": "/medications/potassium-chloride/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/potassium-citrate-oral-solution.html",
+      "destination": "/medications/potassium-citrate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/items/sucralfate-oral-suspension.html",
+      "destination": "/medications/sucralfate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/efficacy-and-safety-of-methimazole-for-once-daily-transdermal-treatment-of-cats-with-hyperthyroidism.html",
+      "destination": "/blog/posts/10-symptoms-of-hyperthyroidism-in-cats.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/efficacy-and-safety-of-methimazole-for-once-daily-transdermal-treatment-of-cats-with-hyperthyroidism.html",
+      "destination": "/medications/methimazole/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/resources-for-veterinarians.html",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monographs/dexamethasone.asp",
+      "destination": "/medications/dexamethasone/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monographs/diazepam.asp",
+      "destination": "/medications/diazepam/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monographs/medroxyprogesteroneAcetate.asp",
+      "destination": "/medications/medroxyprogesterone-acetate/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monographs/phenylpropanolamine.asp",
+      "destination": "/medications/phenylpropanolamine/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monographs/trilostane.asp",
+      "destination": "/medications/trilostane/",
+      "statusCode": 301
+    },
+    {
+      "source": "/phenylpropanolamine.asp",
+      "destination": "/medications/phenylpropanolamine/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/diamondback-drugs-top-preparations.html",
+      "destination": "/medications/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary_medicine.asp",
+      "destination": "/medications/",
+      "statusCode": 301
+    },
+    {
+      "source": "/specialmarkets/lab-animals.html",
+      "destination": "/who-we-serve/research-facilities/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/diamondback-drugs-top-preparations.html",
+      "destination": "/products/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/posts/causes-symptoms-and-treatments-for-cloudy-eyes-in-dogs.html",
+      "destination": "/blog/cloudy-eyes-in-dogs-causes-symptoms-and-treatments/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/posts/over-active-thyroid-in-cats-symptoms-causes-and-treatment.html",
+      "destination": "/blog/10-symptoms-of-hyperthyroidism-in-cats/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/medication-information-for-pet-and-horse-owners/liquid-chlor-with-squalene-for-dogs.html",
+      "destination": "/medications/liquid-chlor-with-squalene/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/working-at-wedgewood-pharmacy.html",
+      "destination": "/about/join-our-team/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/careers/culture.html",
+      "destination": "/about/join-our-team/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/careers/caring.html",
+      "destination": "/about/join-our-team/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/how-to-use-order-wedgewoodpetrx-com.html",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/frequently-asked-questions/faqs-professional.html",
+      "destination": "/support/faqs-for-veterinarians/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/frequently-asked-questions/faqs-for-pet-and-horse-owners.html",
+      "destination": "/support/faqs-for-pet-and-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/frequently-asked-questions/faqs-pet-and-horse-owners.html",
+      "destination": "/support/faqs-for-pet-and-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/faqs-for-veterinarians/",
+      "destination": "/support/faqs-for-veterinarians/",
+      "statusCode": 301
+    },
+    {
+      "source": "/faqs-for-pet-and-horse-owners/",
+      "destination": "/support/faqs-for-pet-and-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/frequently-asked-questions.html",
+      "destination": "/support/faqs-for-veterinarians/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/our-team.html",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/join-us-on-facebook-and-twitter.html",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterinary-practices/navc2011.html",
+      "destination": "/who-we-serve/companion-veterinary-practices/",
+      "statusCode": 301
+    },
+    {
+      "source": "/species/horse.html\\?pageindex=0",
+      "destination": "/who-we-serve/equine-horse-owners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/thelophylline-for-veterinary-use.html",
+      "destination": "/professional-monographs/theophylline-for-veterinary-use/",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/professional-monographs/butorphanol-for-veterinary-use-torbutrol.html",
+      "destination": "/medications/butorphanol/",
+      "statusCode": 301
     }
   ]
 }
