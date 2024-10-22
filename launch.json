@@ -147,7 +147,7 @@
     },
     {
       "source": "/learning-center/medication-information-for-pet-and-horse-owners/tolfenamic-for-dogs-and-cats.html",
-      "destination": "/medications/tolfenamic ",
+      "destination": "/medications/tolfenamic",
       "statusCode": 301
     },
     {
