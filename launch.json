@@ -3787,7 +3787,7 @@
     },
     {
       "source": "/learning-center/twist-a-dose-instructional-video.html",
-      "destination": "https://www.youtube.com/watch?v=UaGjowwHFek",
+      "destination": "https://www.youtube.com/watch\\?v=UaGjowwHFek",
       "statusCode": 301
     },
     {
