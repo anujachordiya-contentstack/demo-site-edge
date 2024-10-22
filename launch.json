@@ -561,11 +561,6 @@
       "statusCode": 301
     },
     {
-      "source": "/learning-center/",
-      "destination": "/learning-center/",
-      "statusCode": 301
-    },
-    {
       "source": "/medications/secnidazole/",
       "destination": "/search/\\?q=secnidazole",
       "statusCode": 301
