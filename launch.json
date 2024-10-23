@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "https://wedgewood-dev2.ckl.tools",
-      "destination": "https://wedgewood-dev1.ckl.tools",
-      "statusCode": 301
-    },
-    {
       "source": "/items/methimazole-twist-a-dose-transdermal-gel.html",
       "destination": "/search/\\?q=Methimazole",
       "statusCode": 301
