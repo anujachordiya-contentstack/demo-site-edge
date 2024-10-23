@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/learning-center/twist-a-dose-instructional-video.html",
+      "destination": "https://www.youtube.com/watch?v=UaGjowwHFek",
+      "statusCode": 301
+    },
+    {
       "source": "/items/methimazole-twist-a-dose-transdermal-gel.html",
       "destination": "/search/\\?q=Methimazole",
       "statusCode": 301
@@ -142,7 +147,7 @@
     },
     {
       "source": "/learning-center/medication-information-for-pet-and-horse-owners/tolfenamic-for-dogs-and-cats.html",
-      "destination": "/medications/tolfenamic",
+      "destination": "/medications/tolfenamic ",
       "statusCode": 301
     },
     {
@@ -553,6 +558,11 @@
     {
       "source": "/learning-center/medication-information-for-pet-and-horse-owners/flunixin-meglumine-for-horses.html",
       "destination": "/search/\\?q=flunixin%20meglumine",
+      "statusCode": 301
+    },
+    {
+      "source": "/learning-center/",
+      "destination": "/learning-center/",
       "statusCode": 301
     },
     {
@@ -3773,11 +3783,6 @@
     {
       "source": "/learning-center/professional-monographs/trilostane-for-veterinary-use.html",
       "destination": "/medications/tylosin/",
-      "statusCode": 301
-    },
-    {
-      "source": "/learning-center/twist-a-dose-instructional-video.html",
-      "destination": "https://www.youtube.com/watch\\?v=UaGjowwHFek",
       "statusCode": 301
     },
     {
