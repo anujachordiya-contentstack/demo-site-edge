@@ -4,9 +4,13 @@ export default async function handler(req, context) {
   const envVariable = context.env.TEST_KEY;
   console.log('CF-Connecting-IP',req.headers.get('CF-Connecting-IP'))
   console.log('x-forwarded-for',req.headers.get('x-forwarded-for'))
+const clonedHeaders = new Headers(request.headers);
   if (route === '/test') {
 
-    const modifiedRequest = new Request(new URL('/users', parsedUrl), req)
+    const modifiedRequest = new Request(new URL('/users', parsedUrl), {
+...req,
+headers: clonedHeaders
+})
     const requestWithCF = new Request(modifiedRequest)
     const res = await fetch(requestWithCF);
     let response = await res.json();
