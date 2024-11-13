@@ -7,7 +7,7 @@ export default async function handler(req, context) {
 const clonedHeaders = new Headers(req.headers);
   if (route === '/test') {
 
-    const modifiedRequest = new Request(new URL('/users', parsedUrl), {
+    const modifiedRequest = new Request(req.url, {
 ...req,
 headers: clonedHeaders
 })
