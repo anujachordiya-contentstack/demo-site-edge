@@ -22,6 +22,5 @@
   },
   "engines": {
     "node": "20.x"
-  },
-  "packageManager": "yarn@4.1.0"
+  }
 }
