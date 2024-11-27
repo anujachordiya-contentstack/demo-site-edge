@@ -1,43 +1,9 @@
-export default async function handler(req, context) {
-  const parsedUrl = new URL(req.url);
-  const route = parsedUrl.pathname;
-  const envVariable = context.env.TEST_KEY;
-  console.log('CF-Connecting-IP',req.headers.get('CF-Connecting-IP'))
-  console.log('x-forwarded-for',req.headers.get('x-forwarded-for'))
-const clonedHeaders = new Headers(req.headers);
-  if (route === '/test') {
-
-    const modifiedRequest = new Request(req.url, {
-...req,
-headers: clonedHeaders
-})
-    const requestWithCF = new Request(modifiedRequest)
-    const res = await fetch(requestWithCF);
-    let response = await res.json();
-    response = {
-      ...response,
-      envVariableValue: envVariable,
-    }
-    return new Response(JSON.stringify(response))
+export default async function handler(request) {
+  const modifiedUrl = new URL(request.url);
+  if (modifiedUrl.hostname === 'demo-site-edge-dev.devcontentstackapps.com') {
+    console.log('Redirecting to demo-site-edge-npmrc.devcontentstackapps.com');
+    modifiedUrl.hostname = 'demo-site-edge-npmrc.devcontentstackapps.com';
+    return Response.redirect(modifiedUrl, 301)
   }
-  if (route === '/external') {
-    const modifiedRequest = new Request('https://e967-103-239-86-172.ngrok-free.app', req)
-
-    // const modifiedRequest = new Request('https://webhook.site/2f864b70-aabe-4d17-9964-29ed6d59c719?id=1', req)
-    // const modifiedRequest = new Request('https://dummytest.requestcatcher.com/test', req)
-    const requestWithCF = new Request(modifiedRequest, {cf:{
-      cacheTtl: 0,
-      cacheEverything: false
-    }})
-
-    requestWithCF.headers.set('Cache-Control','no-cache')
-    const resp = await fetch(requestWithCF);
-    for (const key of resp.headers.keys()) {
-      console.log(key);
-    }
-    return resp;
-  }
-
-  const modifiedRequest = new Request(req)
-  return fetch(modifiedRequest)
+  return fetch(request);
 }
