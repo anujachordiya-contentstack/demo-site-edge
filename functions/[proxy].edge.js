@@ -1,4 +1,5 @@
 export default async function handler(request) {
+  
   const modifiedUrl = new URL(request.url);
   if (modifiedUrl.hostname === 'demo-site-edge-dev.devcontentstackapps.com') {
     console.log('Redirecting to demo-site-edge-npmrc.devcontentstackapps.com');
