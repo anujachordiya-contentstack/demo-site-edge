@@ -3,6 +3,8 @@ export default async function handler(req, context) {
   const route = parsedUrl.pathname;
   const envVariable = context.env.TEST_KEY;
   if (route === '/test') {
+    const userAgent = req.headers.get('user-agent');
+    console.log('User-Agent:', userAgent);
     const res = await fetch(`https://random-data-api.com/api/v2/appliances`);
     let response = await res.json();
     response = {
