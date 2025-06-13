@@ -2,7 +2,7 @@ export default async function handler(req, context) {
   const parsedUrl = new URL(req.url);
   const route = parsedUrl.pathname;
   const envVariable = context.env.TEST_KEY;
-  console.log(request.headers.get('x-forwarded-for'));
+  console.log(req.headers.get('x-forwarded-for'));
   
   const userAgent = req.headers.get('user-agent');
   console.log('User-Agent:', userAgent);
