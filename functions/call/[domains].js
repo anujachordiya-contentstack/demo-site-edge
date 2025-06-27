@@ -2,7 +2,7 @@ export default async function handler(request, response){
   try{
 
   const res = await fetch(process.env.API_URL + `/domain/${request.params.domains}`)
-  const data = await res.json()
+  const data = await res.text()
   response.status(200).send(data);
   }catch(error){
     console.error(error.message);
