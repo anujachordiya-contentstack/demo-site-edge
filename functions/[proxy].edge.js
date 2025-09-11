@@ -5,7 +5,8 @@ export default async function handler(req, context) {
   
   const userAgent = req.headers.get('user-agent');
 console.log("requested", route)
-    const res = await fetch(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
+  const redirectRequest = new Request(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
+    const res = await fetch(redirectRequest);
     console.log(res.status)
     if(!res.ok){
       return new Response('Internal Server Error', { status: 500 });
