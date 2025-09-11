@@ -2,12 +2,15 @@ export default async function handler(req, context) {
   const parsedUrl = new URL(req.url);
   const route = parsedUrl.pathname;
   const envVariable = context.env.TEST_KEY;
-  console.log(req.headers.get('x-forwarded-for'));
   
   const userAgent = req.headers.get('user-agent');
-  console.log('User-Agent:', userAgent);
+
   if (route === '/test') {
-    const res = await fetch(`https://random-data-api.com/api/v2/appliances`);
+    const res = await fetch(`https://contentstack-com-implement-redirects.devcontentstackapps.com/api/redirects`);
+    console.log(res.status)
+    if(!res.ok){
+      return new Response('Internal Server Error', { status: 500 });
+    }
     let response = await res.json();
     response = {
       ...response,
