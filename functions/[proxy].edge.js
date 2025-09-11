@@ -18,6 +18,7 @@ export default async function handler(req, context) {
       }
     })
   }
+  
 
   const userAgent = req.headers.get('user-agent');
 console.log("requested", route)
