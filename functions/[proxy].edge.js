@@ -5,8 +5,7 @@ export default async function handler(req, context) {
   
   const userAgent = req.headers.get('user-agent');
 
-  if (route === '/test') {
-    const res = await fetch(`https://contentstack-com-implement-redirects.devcontentstackapps.com/api/redirects`);
+    const res = await fetch(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
     console.log(res.status)
     if(!res.ok){
       return new Response('Internal Server Error', { status: 500 });
@@ -23,7 +22,6 @@ export default async function handler(req, context) {
         'server': 'Launch'
       }
     })
-  }
 
   return fetch(req)
 }
