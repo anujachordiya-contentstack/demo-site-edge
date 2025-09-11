@@ -4,7 +4,7 @@ export default async function handler(req, context) {
   const envVariable = context.env.TEST_KEY;
   
   const userAgent = req.headers.get('user-agent');
-
+console.log("requested", route)
     const res = await fetch(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
     console.log(res.status)
     if(!res.ok){
