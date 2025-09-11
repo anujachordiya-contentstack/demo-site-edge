@@ -4,7 +4,7 @@ export default async function handler(req, context) {
   const envVariable = context.env.TEST_KEY;
   
   if (route === '/test') {
-    const res = await fetch(`https://random-data-api.com/api/v2/appliances`);
+    const res = await fetch(`https://dummyjson.com/users/1`);
     let response = await res.json();
     response = {
       ...response,
@@ -18,13 +18,13 @@ export default async function handler(req, context) {
       }
     })
   }
-  
+
   const userAgent = req.headers.get('user-agent');
 console.log("requested", route)
   const redirectRequest = new Request(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
     const res = await fetch(redirectRequest);
     console.log(res.status)
-    console.log(res.headers.getAll())
+    // console.log(res.headers.getAll())
     if(!res.ok){
       return new Response('Internal Server Error', { status: 500 });
     }
