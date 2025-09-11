@@ -8,6 +8,7 @@ console.log("requested", route)
   const redirectRequest = new Request(`https://contentstack-com-implement-redirects.devcontentstackapps.com${route}`);
     const res = await fetch(redirectRequest);
     console.log(res.status)
+    console.log(res.headers.getAll())
     if(!res.ok){
       return new Response('Internal Server Error', { status: 500 });
     }
