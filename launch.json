@@ -26,6 +26,10 @@
           "x-powered-by": "launch"
         }
       }
+    },
+    {
+      "source": "/rewrite-same-zone",
+      "destination": "https://contentstack-com-implement-redirects.devcontentstackapps.com/api/redirects",
     }
   ]
 }
