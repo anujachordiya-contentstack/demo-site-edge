@@ -5,18 +5,7 @@ export default async function handler(req, context) {
   
   if (route === '/test') {
     const res = await fetch(`https://contentstack-com-implement-redirects.contentstackapps.com`);
-    let response = await res.json();
-    response = {
-      ...response,
-      time: new Date(),
-      envVariableValue: envVariable,
-    }
-    return new Response(JSON.stringify(response), {
-      headers: {
-        'X-Message': 'Change response headers',
-        'server': 'Launch'
-      }
-    })
+    return res;
   }
 
   return fetch(req)
