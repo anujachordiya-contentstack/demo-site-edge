@@ -4,7 +4,7 @@ export default async function handler(req, context) {
   const envVariable = context.env.TEST_KEY;
   
   if (route === '/test') {
-    const res = await fetch(`contentstack-com-implement-redirects.contentstackapps.com`);
+    const res = await fetch(`https://contentstack-com-implement-redirects.contentstackapps.com`);
     let response = await res.json();
     response = {
       ...response,
