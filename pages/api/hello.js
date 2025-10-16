@@ -2,7 +2,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 
-function handler2(){
+async function handler2(){
 const logPayload = {
     env: process.env.NODE_ENV,
     method: req.method,
