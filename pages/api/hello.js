@@ -6,7 +6,7 @@ export default function handler(req, res) {
     env: process.env.NODE_ENV,
     method: req.method,
     url: req.url,
-    //headers: req.headers,
+    headers: req.headers,
     query: req.query,
     //body: req.body,
     host: req.headers.host,
