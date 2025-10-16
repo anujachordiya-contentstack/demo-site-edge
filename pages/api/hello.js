@@ -25,7 +25,7 @@ export default function handler(req, res) {
 
   // Log a full structured JSON payload — this is what might get filtered on Launch
   console.log('---- BEGIN STRUCTURED LOG ----');
-  console.log(JSON.stringify(logPayload, null, 2));
+  console.log(logPayload);
   console.log('---- END STRUCTURED LOG ----');
 
   res.setHeader('Content-Type', 'application/json');
