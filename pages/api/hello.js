@@ -1,8 +1,9 @@
 // pages/api/log-test.js
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function handler(req, res) {
-  const logPayload = {
+
+function handler2(){
+const logPayload = {
     env: process.env.NODE_ENV,
     method: req.method,
     url: req.url,
@@ -88,4 +89,14 @@ export default function handler(req, res) {
     message: "Structured log generated successfully",
     observedStage: logPayload.stage,
   });
+  
+}
+
+
+export default function handler(req, res) {
+const before = process.memoryUsage();
+ await handler2(req, res)
+  const after = process.memoryUsage();
+  const diffMB = ((after.heapUsed - before.heapUsed) / 1024 / 1024).toFixed(2);
+  console.log((before.rss / 1024 / 1024).toFixed(2), (after.rss / 1024 / 1024).toFixed(2), diffMB)
 }
