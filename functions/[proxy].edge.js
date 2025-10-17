@@ -5,8 +5,8 @@ export default async function handler(request, context) {
     if(hostname === 'www.vineshkamble.xyz'){
         return new Response(null, {
             status: 302,
-            headers: { Location: 'https://vineshkamble.xyz' } // Fixed: comma instead of semicolon, added https://
+            headers: { Location: 'https://vineshkamble.xyz/' } 
         });
     }
-    return fetch(request); // Fixed: added return
+    return fetch(request); 
 }
