@@ -1,26 +1,12 @@
-export default async function handler(req, context) {
-  const parsedUrl = new URL(req.url);
-  const route = parsedUrl.pathname;
-  const envVariable = context.env.TEST_KEY;
-  // console.log(req.headers.get('x-forwarded-for'));
-  
-  const userAgent = req.headers.get('user-agent');
-  // console.log('User-Agent:', userAgent);
-  if (route === '/test') {
-    const res = await fetch(`https://random-data-api.com/api/v2/appliances`);
-    let response = await res.json();
-    response = {
-      ...response,
-      time: new Date(),
-      envVariableValue: envVariable,
-    }
-    return new Response(JSON.stringify(response), {
-      headers: {
-        'X-Message': 'Change response headers',
-        'server': 'Launch'
-      }
-    })
-  }
+export default async function handler(request, context) {
+    const url = new URL(request.url);
+    const hostname = url.hostname;
 
-  return fetch(req)
+    if(hostname === 'www.vineshkamble.xyz'){
+        return new Response(null, {
+            status: 302,
+            headers: { Location: 'https://vineshkamble.xyz' } // Fixed: comma instead of semicolon, added https://
+        });
+    }
+    return fetch(request); // Fixed: added return
 }
