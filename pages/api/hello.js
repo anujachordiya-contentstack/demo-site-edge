@@ -20,8 +20,6 @@ const logPayload = {
    console.log('---- BEGIN STRUCTURED LOG ----');
   console.log(logPayload);
 
-  console.log(JSON.stringify({ url: 'http://localhost:4000 3' }));
-
   console.log('---- END STRUCTURED LOG ----');
 
   res.setHeader('Content-Type', 'application/json');
