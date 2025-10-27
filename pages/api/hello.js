@@ -16,15 +16,12 @@ const logPayload = {
 
 
   // Log a full structured JSON payload — this is what might get filtered on Launch
-   console.log(logPayload);
+  
    console.log('---- BEGIN STRUCTURED LOG ----');
- 
-  console.log('local:4000 1', logPayload);
-  console.log('http://' + 'localhost:4000 2');
-  console.log(JSON.stringify({ url: 'http://localhost:4000 3' }));
-  console.log('http://127.0.0.1:4000 5');
+  console.log(logPayload);
 
-  console.log({ endpoint: 'http://localhost:4000' });
+  console.log(JSON.stringify({ url: 'http://localhost:4000 3' }));
+
   console.log('---- END STRUCTURED LOG ----');
 
   res.setHeader('Content-Type', 'application/json');
