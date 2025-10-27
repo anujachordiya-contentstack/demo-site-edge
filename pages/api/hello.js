@@ -11,7 +11,6 @@ const logPayload = {
     url: req.url,
     headers: req.headers,
     query: req.query,
-    body: req.body,
     timestamp: new Date().toISOString()
   };
 
