@@ -9,7 +9,6 @@ const logPayload = {
     env: process.env.NODE_ENV,
     method: req.method,
     url: req.url,
-    headers: req.headers,
     query: req.query,
     timestamp: new Date().toISOString()
   };
