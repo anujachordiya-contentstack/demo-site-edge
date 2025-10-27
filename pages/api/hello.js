@@ -10,6 +10,7 @@ const logPayload = {
     method: req.method,
     url: req.url,
     query: req.query,
+    body: req.body,
     timestamp: new Date().toISOString()
   };
 
@@ -17,6 +18,8 @@ const logPayload = {
   // Log a full structured JSON payload — this is what might get filtered on Launch
   console.log('---- BEGIN STRUCTURED LOG ----');
   console.log(logPayload);
+  console.log('http://localhost:4000/c-s/support/electric-toothbrushes',logPayload);
+  console.log('http://localhost:4000',logPayload);
   console.log('---- END STRUCTURED LOG ----');
 
   res.setHeader('Content-Type', 'application/json');
