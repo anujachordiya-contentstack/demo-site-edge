@@ -16,7 +16,9 @@ const logPayload = {
 
 
   // Log a full structured JSON payload — this is what might get filtered on Launch
- console.log('http://localhost:4000');
+ const msg = 'http://localhost:4000';
+console.log(msg);
+    console.log('URL:', 'http://localhost:4000');
   console.log('---- BEGIN STRUCTURED LOG ----');
   // console.log(logPayload);
 
