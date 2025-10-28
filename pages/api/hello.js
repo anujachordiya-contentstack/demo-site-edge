@@ -14,7 +14,7 @@ const logPayload = {
     timestamp: new Date().toISOString()
   };
 
-
+console.log("start");
   // Log a full structured JSON payload — this is what might get filtered on Launch
  const msg = 'http://localhost:4000';
 console.log(msg);
