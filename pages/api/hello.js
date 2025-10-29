@@ -14,15 +14,15 @@ const logPayload = {
     timestamp: new Date().toISOString()
   };
 
-console.log("start");
-  // Log a full structured JSON payload — this is what might get filtered on Launch
  const msg = 'http://localhost:4000';
-console.log(msg);
-    console.log('URL:', 'http://localhost:4000');
-  console.log('---- BEGIN STRUCTURED LOG ----');
+    
+ console.log("start");
+ console.log(msg);
+  //   console.log('URL:', 'http://localhost:4000');
+  // console.log('---- BEGIN STRUCTURED LOG ----');
   // console.log(logPayload);
 
-  console.log('---- END STRUCTURED LOG ----');
+  // console.log('---- END STRUCTURED LOG ----');
 
   res.setHeader('Content-Type', 'application/json');
   res.status(200).json({
