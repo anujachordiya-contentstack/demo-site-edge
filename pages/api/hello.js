@@ -18,7 +18,7 @@ const logPayload = {
     
  console.log("start");
  console.log(msg);
-  //   console.log('URL:', 'http://localhost:4000');
+ console.log('http://localhost:4000');
   // console.log('---- BEGIN STRUCTURED LOG ----');
   // console.log(logPayload);
 
