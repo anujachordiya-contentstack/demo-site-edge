@@ -14,15 +14,11 @@ const logPayload = {
     timestamp: new Date().toISOString()
   };
 
- const msg = 'http://localhost:4000';
-    
- console.log("start");
- console.log(msg);
- console.log('http://localhost:4000');
-  // console.log('---- BEGIN STRUCTURED LOG ----');
-  // console.log(logPayload);
 
-  // console.log('---- END STRUCTURED LOG ----');
+    
+console.log(`[${new Date().toLocaleString()}] ---- BEGIN STRUCTURED LOG ----`);
+console.log(`[${new Date().toLocaleString()}] messae`);
+console.log(`[${new Date().toLocaleString()}] ---- END STRUCTURED LOG ----`);
 
   res.setHeader('Content-Type', 'application/json');
   res.status(200).json({
