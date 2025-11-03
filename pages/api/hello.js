@@ -17,7 +17,9 @@ const logPayload = {
 
     
 console.log(`[${new Date().toLocaleString()}] ---- BEGIN STRUCTURED LOG ----`);
-console.log(`[${new Date().toLocaleString()}] messae`);
+console.log('This is useful for debugging. Is clubbing showing up in telemetry rather than console.This is useful for debugging. Is clubbing showing up in telemetry rather than console');
+console.log('new log');
+console.log('log present.Is clubbing showing up');
 console.log(`[${new Date().toLocaleString()}] ---- END STRUCTURED LOG ----`);
 
   res.setHeader('Content-Type', 'application/json');
