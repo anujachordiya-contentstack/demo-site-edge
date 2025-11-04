@@ -18,7 +18,7 @@ const logPayload = {
     
 console.log(`[${new Date().toLocaleString()}] ---- BEGIN STRUCTURED LOG ----`);
 console.log('This is useful for debugging. Is clubbing showing up in telemetry rather than console.This is useful for debugging. Is clubbing showing up in telemetry rather than console');
-console.log('new log');
+console.log('localhost:4000');
 console.log('log present.Is clubbing showing up');
 console.log("Error occurred:\nStack trace:\n at handleServer (index.js:42)");
 console.log("check\n");
