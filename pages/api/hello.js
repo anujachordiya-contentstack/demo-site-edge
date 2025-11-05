@@ -16,10 +16,14 @@ const logPayload = {
 
 
     
-console.log('BEGIN STRUCTURED LOG');
-console.log('This is useful for debugging. Is clubbing showing up in telemetry rather than console.\nThis is useful for debugging. Is clubbing showing up in telemetry rather than console');
-console.log('log present.Is clubbing showing up');
-console.log('END STRUCTURED LOG');
+// console.log('BEGIN STRUCTURED LOG');
+// console.log('This is useful for debugging. Is clubbing showing up in telemetry rather than console.\nThis is useful for debugging. Is clubbing showing up in telemetry rather than console');
+// console.log('log present.Is clubbing showing up');
+// console.log('END STRUCTURED LOG');
+
+    console.log('one/ntwo');
+    console.log('one');
+    console.log('one/\ntwo');
 
   res.setHeader('Content-Type', 'application/json');
   res.status(200).json({
