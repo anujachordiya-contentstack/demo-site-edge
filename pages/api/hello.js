@@ -21,7 +21,7 @@ const logPayload = {
 // console.log('log present.Is clubbing showing up');
 // console.log('END STRUCTURED LOG');
 
-    console.log('one/ntwo');
+    console.log('one\ntwo');
     console.log('one');
     console.log('one/\ntwo');
 
