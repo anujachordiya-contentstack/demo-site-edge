@@ -1,24 +1,11 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
-interface ApiResult {
-  url: string;
-  status: number;
-  success: boolean;
-  message: string;
-  response?: unknown;
-}
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req, res) {
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
   console.log("Starting POST calls to all API endpoints");
-  
+
   // Define all your API endpoints
   const apiEndpoints = [
     "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d391b2a9fe7291ab51599a",
@@ -47,17 +34,17 @@ export default async function handler(
     "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3d0adb756c333aef1a0a0",
   ];
 
-  const results: ApiResult[] = [];
-  const errors: ApiResult[] = [];
+  const results = [];
+  const errors = [];
 
   try {
     const batchSize = 16;
     const totalBatches = Math.ceil(apiEndpoints.length / batchSize);
-    
+
     console.log(`Processing ${apiEndpoints.length} endpoints in ${totalBatches} batches of ${batchSize} (all batches in parallel)`);
 
     // Create all batches
-    const batches: string[][] = [];
+    const batches = [];
     for (let batchIndex = 0; batchIndex < totalBatches; batchIndex++) {
       const startIndex = batchIndex * batchSize;
       const endIndex = Math.min(startIndex + batchSize, apiEndpoints.length);
@@ -66,28 +53,23 @@ export default async function handler(
     }
 
     // Process all batches in parallel
-    const allBatchPromises: Promise<ApiResult[]>[] = batches.map(async (batch, batchIndex): Promise<ApiResult[]> => {
+    const allBatchPromises = batches.map(async (batch, batchIndex) => {
       console.log(`Starting batch ${batchIndex + 1}/${totalBatches} (${batch.length} URLs)`);
-      
-      // Process URLs within this batch in parallel
-      const batchPromises: Promise<ApiResult>[] = batch.map(async (url, index): Promise<ApiResult> => {
+
+      const batchPromises = batch.map(async (url, index) => {
         const globalIndex = (batchIndex * batchSize) + index;
         try {
           console.log(`Making POST call ${globalIndex + 1}/${apiEndpoints.length}: ${url}`);
-          
-          // Determine if it's an internal or external URL
+
           const isInternal = url.startsWith('/api/');
-          const fullUrl = isInternal ? `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}${url}` : url;
-          
+          const fullUrl = isInternal
+            ? `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}${url}`
+            : url;
+
           const response = await fetch(fullUrl, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              // Add any required headers for authentication
-              // 'Authorization': `Bearer ${process.env.API_TOKEN}`,
-            },
-            // Add any required body data
-            body: JSON.stringify({ 
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
               timestamp: new Date().toISOString(),
               source: 'post-all-endpoint'
             })
@@ -100,8 +82,8 @@ export default async function handler(
             responseData = await response.text();
           }
 
-          const result: ApiResult = {
-            url: url,
+          const result = {
+            url,
             status: response.status,
             success: response.ok,
             message: response.ok ? 'Success' : `Failed with status ${response.status}`,
@@ -115,34 +97,28 @@ export default async function handler(
           }
 
           return result;
+
         } catch (error) {
-          const errorResult: ApiResult = {
-            url: url,
+          console.log(`❌ Network error for ${url}:`, error);
+          return {
+            url,
             status: 0,
             success: false,
-            message: `Network error: ${error instanceof Error ? error.message : 'Unknown error'}`
+            message: `Network error: ${error?.message || 'Unknown error'}`
           };
-          console.log(`❌ Network error for ${url}:`, error);
-          return errorResult;
         }
       });
 
-      // Wait for all URLs in this batch to complete
       const batchResults = await Promise.all(batchPromises);
       console.log(`Completed batch ${batchIndex + 1}/${totalBatches}`);
       return batchResults;
     });
 
-    // Wait for all batches to complete
     const allBatchResults = await Promise.all(allBatchPromises);
-    
-    // Flatten results and separate successes from errors
+
     allBatchResults.flat().forEach(result => {
-      if (result.success) {
-        results.push(result);
-      } else {
-        errors.push(result);
-      }
+      if (result.success) results.push(result);
+      else errors.push(result);
     });
 
     return res.status(200).json({
@@ -153,8 +129,8 @@ export default async function handler(
         successful: results.length,
         failed: errors.length
       },
-      results: results,
-      errors: errors,
+      results,
+      errors,
       timestamp: new Date().toISOString()
     });
 
@@ -163,7 +139,7 @@ export default async function handler(
     return res.status(500).json({
       success: false,
       message: "Unexpected error occurred during POST calls",
-      error: error instanceof Error ? error.message : 'Unknown error'
+      error: error?.message || 'Unknown error'
     });
   }
 }
