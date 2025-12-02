@@ -8,30 +8,8 @@ export default async function handler(req, res) {
 
   // Define all your API endpoints
   const apiEndpoints = [
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d391b2a9fe7291ab51599a",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3920aa9fe7291ab515aab",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3922fa9fe7291ab515b15",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d39253a9fe7291ab515b7f",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3932aa9fe7291ab515c1b",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3934da9fe7291ab515c5f",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3936aa9fe7291ab515ca3",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3938da9fe7291ab515ce7",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c57d2c4927c30427fa914",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c5814c4927c30427fa975",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3cde95407267769d54e6a",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3ce0e5407267769d55113",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3cef4b756c333aef19a04",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c5867c4927c30427fa9d6",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3cf36b756c333aef19a8f",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c5889c4927c30427faa31",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c58aec4927c30427faa8e",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c58d4c4927c30427faadf",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3cffdb756c333aef19cc0",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c5937c4927c30427fab2c",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c5959c4927c30427fab85",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c59b5c4927c30427fac1a",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/691c59d7c4927c30427fac64",
-    "https://stag-app.csnonprod.com/launch-api/manage/deploy/68d3d0adb756c333aef1a0a0",
+    "https://dev11-app.csnonprod.com/launch-api/manage/deploy/692ee1b07587c4907f981a85",
+    "https://dev11-app.csnonprod.com/launch-api/manage/deploy/692ee2d4b1b5b10d2f52bcc3",
   ];
 
   const results = [];
